@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51D5C6A5231691B300695724 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5C6A4231691B300695724 /* LikeButton.swift */; };
 		F163A1EB230E74570093DD32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F163A1EA230E74570093DD32 /* AppDelegate.swift */; };
 		F163A1ED230E74570093DD32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F163A1EC230E74570093DD32 /* ViewController.swift */; };
 		F163A1F0230E74570093DD32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F163A1EE230E74570093DD32 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		51D5C6A4231691B300695724 /* LikeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
 		F163A1E7230E74570093DD32 /* Profile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Profile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F163A1EA230E74570093DD32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F163A1EC230E74570093DD32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				F1A56C5D23153FB700C8F75F /* YourCatViewController.swift */,
 				F1A56C5F23153FB700C8F75F /* ChooseCatViewController.swift */,
 				F1A56C5E23153FB700C8F75F /* ImageViewerViewController.swift */,
+				51D5C6A4231691B300695724 /* LikeButton.swift */,
 				F1A56C6323153FDD00C8F75F /* Cell Item */,
 			);
 			path = "Match Controller";
@@ -218,6 +221,7 @@
 				F163A1EB230E74570093DD32 /* AppDelegate.swift in Sources */,
 				F1A56C572313CF5A00C8F75F /* LikeTableViewController.swift in Sources */,
 				F1A56C6023153FB700C8F75F /* YourCatViewController.swift in Sources */,
+				51D5C6A5231691B300695724 /* LikeButton.swift in Sources */,
 				F163A207230E81A40093DD32 /* OwnerCatDetailVC.swift in Sources */,
 				F1A56C522313BA5900C8F75F /* LikedByTableViewCell.swift in Sources */,
 				F163A201230E7FC30093DD32 /* EditViewController.swift in Sources */,
@@ -375,7 +379,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DYL2G75B8U;
+				DEVELOPMENT_TEAM = BLQPCH7T63;
 				INFOPLIST_FILE = Profile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -393,7 +397,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = DYL2G75B8U;
+				DEVELOPMENT_TEAM = BLQPCH7T63;
 				INFOPLIST_FILE = Profile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
