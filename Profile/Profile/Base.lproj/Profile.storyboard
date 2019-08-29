@@ -143,7 +143,7 @@
         <!--Edit-->
         <scene sceneID="oZj-n5-PwB">
             <objects>
-                <viewController id="AE4-FJ-lFq" customClass="EditViewController" customModule="Profile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="AE4-FJ-lFq" customClass="EditProfileViewController" customModule="Profile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a9V-5l-OS7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -152,7 +152,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Edit" id="B4c-iK-M9z">
                         <barButtonItem key="backBarButtonItem" title="Edit" id="BqU-M8-Lin"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="qnJ-WK-o1x"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RXA-SL-Fq7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -169,10 +168,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="nPd-Iy-6WF"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Add Cat" id="zW5-hK-IbB">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="MPx-D6-6aD"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="z54-JY-leg"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Add Cat" id="zW5-hK-IbB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8mI-9L-BLO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -292,7 +288,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="250" id="fp0-Mr-rdl"/>
                                                 </constraints>
-                                                <mutableString key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed arcu non odio euismod lacinia at. Aliquet risus feugiat in ante metus dictum at tempor. Vitae nunc sed velit dignissim sodales ut eu sem integer. Sagittis vitae et leo duis ut diam. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt tortor aliquam nulla facilisi cras fermentum odio. Cursus euismod quis viverra nibh cras pulvinar mattis nunc sed. Quisque egestas diam in arcu. Ornare quam viverra orci sagittis eu volutpat odio. Libero volutpat sed cras ornare arcu.
+                                                <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed arcu non odio euismod lacinia at. Aliquet risus feugiat in ante metus dictum at tempor. Vitae nunc sed velit dignissim sodales ut eu sem integer. Sagittis vitae et leo duis ut diam. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Ridiculus mus mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt tortor aliquam nulla facilisi cras fermentum odio. Cursus euismod quis viverra nibh cras pulvinar mattis nunc sed. Quisque egestas diam in arcu. Ornare quam viverra orci sagittis eu volutpat odio. Libero volutpat sed cras ornare arcu.
 
 Aliquam faucibus purus in massa tempor nec feugiat nisl pretium. Rhoncus urna neque viverra justo. Vehicula ipsum a arcu cursus vitae congue. Eu volutpat odio facilisis mauris sit. Rhoncus dolor purus non enim praesent. Tempor nec feugiat nisl pretium fusce id velit ut. Non diam phasellus vestibulum lorem sed risus. Ac odio tempor orci dapibus ultrices in. A diam maecenas sed enim. Senectus et netus et malesuada fames.
 
@@ -300,7 +296,7 @@ Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget egestas. Orc
 
 Non enim praesent elementum facilisis. Pellentesque habitant morbi tristique senectus et netus. Et pharetra pharetra massa massa. Nisl purus in mollis nunc. Risus quis varius quam quisque id diam. Tellus pellentesque eu tincidunt tortor. Sit amet facilisis magna etiam tempor orci. Eget dolor morbi non arcu risus quis varius. Sed nisi lacus sed viverra tellus in hac. Porttitor massa id neque aliquam vestibulum morbi blandit cursus. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper dignissim. Quam viverra orci sagittis eu volutpat odio facilisis mauris sit. Ligula ullamcorper malesuada proin libero nunc. Eu facilisis sed odio morbi quis commodo odio. Fusce id velit ut tortor. Sit amet purus gravida quis blandit. Accumsan in nisl nisi scelerisque. Dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida. Fermentum odio eu feugiat pretium nibh ipsum consequat nisl vel. Posuere lorem ipsum dolor sit amet consectetur adipiscing.
 
-Velit scelerisque in dictum non consectetur. Ultrices vitae auctor eu augue ut. Cras fermentum odio eu feugiat pretium. Nibh tortor id aliquet lectus proin. Vitae turpis massa sed elementum tempus egestas sed sed. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Imperdiet sed euismod nisi porta lorem mollis aliquam. Nisl purus in mollis nunc sed id. Lacus laoreet non curabitur gravida. Nullam non nisi est sit amet. Commodo ullamcorper a lacus vestibulum sed. Rhoncus mattis rhoncus urna neque. Et ultrices neque ornare aenean euismod elementum nisi quis. Non blandit massa enim nec dui. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit. Arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales. Vitae tortor condimentum lacinia quis vel eros donec ac odio. Eget nunc lobortis mattis aliquam faucibus purus in massa. Neque sodales ut etiam sit amet nisl.</mutableString>
+Velit scelerisque in dictum non consectetur. Ultrices vitae auctor eu augue ut. Cras fermentum odio eu feugiat pretium. Nibh tortor id aliquet lectus proin. Vitae turpis massa sed elementum tempus egestas sed sed. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Imperdiet sed euismod nisi porta lorem mollis aliquam. Nisl purus in mollis nunc sed id. Lacus laoreet non curabitur gravida. Nullam non nisi est sit amet. Commodo ullamcorper a lacus vestibulum sed. Rhoncus mattis rhoncus urna neque. Et ultrices neque ornare aenean euismod elementum nisi quis. Non blandit massa enim nec dui. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit. Arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales. Vitae tortor condimentum lacinia quis vel eros donec ac odio. Eget nunc lobortis mattis aliquam faucibus purus in massa. Neque sodales ut etiam sit amet nisl.</string>
                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -386,17 +382,14 @@ Velit scelerisque in dictum non consectetur. Ultrices vitae auctor eu augue ut. 
         <!--Edit-->
         <scene sceneID="CHp-PY-Olo">
             <objects>
-                <viewController id="9GW-bE-b77" customClass="EditViewController" customModule="Profile" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9GW-bE-b77" customClass="EditCatViewController" customModule="Profile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AZt-u4-7Xm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="zrt-pK-NXe"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Edit" id="dEb-0v-JJz">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="GSH-LT-DsZ"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="ZEJ-02-GlM"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Edit" id="dEb-0v-JJz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rGc-7g-0i5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
