@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		51D5C6A5231691B300695724 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5C6A4231691B300695724 /* LikeButton.swift */; };
+		EB76BD21231769F200B3F534 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76BD1D231769F200B3F534 /* RoundedView.swift */; };
+		EB76BD22231769F200B3F534 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76BD1E231769F200B3F534 /* RoundedButton.swift */; };
+		EB76BD23231769F200B3F534 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76BD1F231769F200B3F534 /* Extension.swift */; };
+		EB76BD24231769F200B3F534 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76BD20231769F200B3F534 /* GradientView.swift */; };
+		EB76BD2923176DC200B3F534 /* PhotoGalleryViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB76BD2823176DC200B3F534 /* PhotoGalleryViewCell.xib */; };
+		EB76BD2B23176DC900B3F534 /* PhotoGalleryViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76BD2A23176DC900B3F534 /* PhotoGalleryViewCell.swift */; };
+		EB76BD2D23176DD600B3F534 /* CatEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76BD2C23176DD600B3F534 /* CatEditViewController.swift */; };
+		EB76BD2F23176DEF00B3F534 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76BD2E23176DEF00B3F534 /* LoginViewController.swift */; };
+		EB76BD3123176E0300B3F534 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76BD3023176E0300B3F534 /* RegisterViewController.swift */; };
+		EB76BD3323176F7600B3F534 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB76BD3223176F7600B3F534 /* Login.storyboard */; };
 		F163A1EB230E74570093DD32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F163A1EA230E74570093DD32 /* AppDelegate.swift */; };
 		F163A1ED230E74570093DD32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F163A1EC230E74570093DD32 /* ViewController.swift */; };
 		F163A1F0230E74570093DD32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F163A1EE230E74570093DD32 /* Main.storyboard */; };
@@ -30,6 +40,16 @@
 
 /* Begin PBXFileReference section */
 		51D5C6A4231691B300695724 /* LikeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
+		EB76BD1D231769F200B3F534 /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		EB76BD1E231769F200B3F534 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		EB76BD1F231769F200B3F534 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		EB76BD20231769F200B3F534 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		EB76BD2823176DC200B3F534 /* PhotoGalleryViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoGalleryViewCell.xib; sourceTree = "<group>"; };
+		EB76BD2A23176DC900B3F534 /* PhotoGalleryViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoGalleryViewCell.swift; sourceTree = "<group>"; };
+		EB76BD2C23176DD600B3F534 /* CatEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatEditViewController.swift; sourceTree = "<group>"; };
+		EB76BD2E23176DEF00B3F534 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EB76BD3023176E0300B3F534 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		EB76BD3223176F7600B3F534 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		F163A1E7230E74570093DD32 /* Profile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Profile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F163A1EA230E74570093DD32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F163A1EC230E74570093DD32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +83,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB76BD1B2317673300B3F534 /* Login Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EB76BD2E23176DEF00B3F534 /* LoginViewController.swift */,
+				EB76BD3023176E0300B3F534 /* RegisterViewController.swift */,
+			);
+			path = "Login Controller";
+			sourceTree = "<group>";
+		};
+		EB76BD1C231767B000B3F534 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				EB76BD1F231769F200B3F534 /* Extension.swift */,
+				EB76BD20231769F200B3F534 /* GradientView.swift */,
+				EB76BD1E231769F200B3F534 /* RoundedButton.swift */,
+				EB76BD1D231769F200B3F534 /* RoundedView.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		EB76BD2523176D6F00B3F534 /* Edit Cat */ = {
+			isa = PBXGroup;
+			children = (
+				EB76BD2C23176DD600B3F534 /* CatEditViewController.swift */,
+				EB76BD2823176DC200B3F534 /* PhotoGalleryViewCell.xib */,
+				EB76BD2A23176DC900B3F534 /* PhotoGalleryViewCell.swift */,
+			);
+			path = "Edit Cat";
+			sourceTree = "<group>";
+		};
 		F163A1DE230E74570093DD32 = {
 			isa = PBXGroup;
 			children = (
@@ -82,9 +132,13 @@
 		F163A1E9230E74570093DD32 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				EB76BD2523176D6F00B3F534 /* Edit Cat */,
+				EB76BD1C231767B000B3F534 /* Helper */,
+				EB76BD1B2317673300B3F534 /* Login Controller */,
 				F163A1EA230E74570093DD32 /* AppDelegate.swift */,
 				F163A1EE230E74570093DD32 /* Main.storyboard */,
 				F1A56C5823153F0D00C8F75F /* Profile.storyboard */,
+				EB76BD3223176F7600B3F534 /* Login.storyboard */,
 				F163A208230E91DC0093DD32 /* Profile Controller */,
 				F1A56C5C23153F5100C8F75F /* Match Controller */,
 				F163A1F1230E74580093DD32 /* Assets.xcassets */,
@@ -202,7 +256,9 @@
 				F1A56C6723153FEF00C8F75F /* MatchCollectionViewCell.xib in Resources */,
 				F163A205230E80C40093DD32 /* ItemCollectionViewCell.xib in Resources */,
 				F163A1F2230E74580093DD32 /* Assets.xcassets in Resources */,
+				EB76BD2923176DC200B3F534 /* PhotoGalleryViewCell.xib in Resources */,
 				F163A1F0230E74570093DD32 /* Main.storyboard in Resources */,
+				EB76BD3323176F7600B3F534 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,17 +269,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB76BD23231769F200B3F534 /* Extension.swift in Sources */,
 				F1A56C6223153FB700C8F75F /* ChooseCatViewController.swift in Sources */,
 				F1A56C6623153FEF00C8F75F /* MatchCollectionViewCell.swift in Sources */,
 				F1A56C6123153FB700C8F75F /* ImageViewerViewController.swift in Sources */,
+				EB76BD2F23176DEF00B3F534 /* LoginViewController.swift in Sources */,
 				F163A1ED230E74570093DD32 /* ViewController.swift in Sources */,
+				EB76BD2D23176DD600B3F534 /* CatEditViewController.swift in Sources */,
 				F163A204230E80C40093DD32 /* ItemCollectionViewCell.swift in Sources */,
+				EB76BD24231769F200B3F534 /* GradientView.swift in Sources */,
 				F163A1EB230E74570093DD32 /* AppDelegate.swift in Sources */,
 				F1A56C572313CF5A00C8F75F /* LikeTableViewController.swift in Sources */,
+				EB76BD3123176E0300B3F534 /* RegisterViewController.swift in Sources */,
+				EB76BD21231769F200B3F534 /* RoundedView.swift in Sources */,
 				F1A56C6023153FB700C8F75F /* YourCatViewController.swift in Sources */,
 				51D5C6A5231691B300695724 /* LikeButton.swift in Sources */,
 				F163A207230E81A40093DD32 /* OwnerCatDetailVC.swift in Sources */,
+				EB76BD22231769F200B3F534 /* RoundedButton.swift in Sources */,
 				F1A56C522313BA5900C8F75F /* LikedByTableViewCell.swift in Sources */,
+				EB76BD2B23176DC900B3F534 /* PhotoGalleryViewCell.swift in Sources */,
 				F163A201230E7FC30093DD32 /* EditViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -379,7 +443,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BLQPCH7T63;
+				DEVELOPMENT_TEAM = 46X9JWL5UU;
 				INFOPLIST_FILE = Profile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -397,7 +461,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BLQPCH7T63;
+				DEVELOPMENT_TEAM = 46X9JWL5UU;
 				INFOPLIST_FILE = Profile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
