@@ -13,12 +13,12 @@
         <!--Register View Controller-->
         <scene sceneID="RAY-tr-gEq">
             <objects>
-                <viewController id="yRx-Zz-99h" customClass="RegisterViewController" customModule="Cating" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="47w-kS-Jkz" customClass="GradientView" customModule="Cating" customModuleProvider="target">
+                <viewController id="yRx-Zz-99h" customClass="RegisterViewController" customModule="Profile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="47w-kS-Jkz" customClass="GradientView" customModule="Profile" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Wo-OI-Skd" customClass="RoundedView" customModule="Cating" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Wo-OI-Skd" customClass="RoundedView" customModule="Profile" customModuleProvider="target">
                                 <rect key="frame" x="38" y="233" width="338" height="516"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="adC-Fn-1cE">
@@ -127,7 +127,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zR9-73-33H" customClass="RoundedView" customModule="Cating" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zR9-73-33H" customClass="RoundedView" customModule="Profile" customModuleProvider="target">
                                 <rect key="frame" x="158.5" y="101" width="97" height="97"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -259,12 +259,12 @@
         <!--Login View Controller-->
         <scene sceneID="OJo-JF-lXp">
             <objects>
-                <viewController id="dap-67-0S3" customClass="LoginViewController" customModule="Cating" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="UpB-TR-ec0" customClass="GradientView" customModule="Cating" customModuleProvider="target">
+                <viewController id="dap-67-0S3" customClass="LoginViewController" customModule="Profile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UpB-TR-ec0" customClass="GradientView" customModule="Profile" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIn-kP-ha2" customClass="RoundedView" customModule="Cating" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIn-kP-ha2" customClass="RoundedView" customModule="Profile" customModuleProvider="target">
                                 <rect key="frame" x="159" y="80" width="96" height="96"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -278,7 +278,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jFP-I3-6Hs" customClass="RoundedView" customModule="Cating" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jFP-I3-6Hs" customClass="RoundedView" customModule="Profile" customModuleProvider="target">
                                 <rect key="frame" x="38" y="190" width="338" height="516"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dtq-3v-sp5">
@@ -388,7 +388,7 @@
         <!--Cat Edit View Controller-->
         <scene sceneID="twl-w8-2Cz">
             <objects>
-                <viewController id="5Rk-Sv-s2f" customClass="CatEditViewController" customModule="Cating" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="5Rk-Sv-s2f" customClass="CatEditViewController" customModule="Profile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="efE-t2-vLT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
