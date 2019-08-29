@@ -694,7 +694,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_unchecked" width="16" height="16"/>
+        <image name="ic_unchecked" width="50" height="50"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="2uO-hb-oHu"/>

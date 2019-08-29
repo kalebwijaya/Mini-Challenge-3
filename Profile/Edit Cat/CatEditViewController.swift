@@ -30,7 +30,21 @@ class CatEditViewController: UIViewController{
         super.viewDidLoad()
         setupColletionView()
         
-        // Do any additional setup after loading the view.
+        let actionButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(editCat))
+        self.navigationItem.rightBarButtonItem = actionButton
+        
+        let backButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(back))
+        self.navigationItem.leftBarButtonItem = backButton
+        
+        self.navigationItem.largeTitleDisplayMode = .never
+    }
+    
+    @objc func editCat() {
+        
+    }
+    
+    @objc func back(){
+        self.navigationController?.popViewController(animated: true)
     }
     
     private func setupColletionView(){
