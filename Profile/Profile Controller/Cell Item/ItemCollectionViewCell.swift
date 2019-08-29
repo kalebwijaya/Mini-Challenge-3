@@ -11,6 +11,9 @@ import UIKit
 class ItemCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var catGender: UIImageView!
+    @IBOutlet weak var catName: UILabel!
+    @IBOutlet weak var catAge: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         

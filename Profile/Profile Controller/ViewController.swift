@@ -8,8 +8,18 @@
 
 import UIKit
 
-struct item {
+struct ownerCat {
     var imageName : String
+    var catName: String
+    var catRace: String
+    var catGender: String
+    var catAge: String
+}
+
+struct ownerData {
+    var ownerName: String
+    var ownerLocation: String
+    var ownerVerification: String
 }
 
 class ViewController: UIViewController {
@@ -18,9 +28,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var ownerName: UILabel!
     @IBOutlet weak var ownerLoc: UILabel!
     @IBOutlet weak var ownerVerif: UILabel!
+    @IBOutlet weak var verifImage: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var items:[item] = [item(imageName: "1"),item(imageName: "2"),item(imageName: "3"),item(imageName: "4")]
+    var items:[ownerCat] = [ownerCat(imageName: "1", catName: "Si Orenji", catRace: "Persian", catGender: "Lady", catAge: "2 yr 3 mo"), ownerCat(imageName: "2", catName: "Timmy", catRace: "Shorthair", catGender: "Gentlecat", catAge: "2 yr"), ownerCat(imageName: "3", catName: "Bitsy", catRace: "Munchkin", catGender: "Lady", catAge: "3 yr 9 mo")]
+    var data = ownerData(ownerName: "Kaleb", ownerLocation: "Tangerang", ownerVerification: "Not Verified")
     
     var collectionViewFlowLayout : UICollectionViewFlowLayout!
     let cellIdentifier = "ItemCollectionViewCell"
@@ -31,7 +43,11 @@ class ViewController: UIViewController {
         setupColletionView()
         
         ownerPic.layer.cornerRadius = ownerPic.frame.height/2
-        // Do any additional setup after loading the view.
+        
+        ownerName.text = data.ownerName
+        ownerLoc.text = data.ownerLocation
+        ownerVerif.text = data.ownerVerification
+        verifImage.image = UIImage(named: data.ownerVerification)
     }
     
     override func viewWillLayoutSubviews() {
@@ -41,11 +57,14 @@ class ViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        
         if segue.identifier == imageViewSegueIdentifier {
-            let item = sender as! item
+            let item = sender as! ownerCat
             if let vc = segue.destination as? OwnerCatDetailVC {
                 vc.imageName = item.imageName
+                vc.age = item.catAge
+                vc.name = item.catName
+                vc.race = item.catRace
+                vc.gender = item.catGender
             }
         }
     }
@@ -89,7 +108,9 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath ) as! ItemCollectionViewCell
         
         cell.imageView.image = UIImage(named: items[indexPath.item].imageName)
-        
+        cell.catName.text = items[indexPath.item].catName
+        cell.catGender.image = UIImage(named: items[indexPath.item].catGender)
+        cell.catAge.text = items[indexPath.item].catAge
         return cell
     }
     
