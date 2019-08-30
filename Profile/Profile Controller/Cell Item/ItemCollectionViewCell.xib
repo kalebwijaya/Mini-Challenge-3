@@ -19,45 +19,41 @@
                 <rect key="frame" x="0.0" y="0.0" width="177" height="177"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ele-rJ-uLd">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ele-rJ-uLd">
                         <rect key="frame" x="0.0" y="0.0" width="177" height="177"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Ele-rJ-uLd" secondAttribute="height" multiplier="1:1" id="1xw-ZG-YaA"/>
+                            <constraint firstAttribute="height" constant="177" id="7f2-Sj-xUZ"/>
+                            <constraint firstAttribute="width" constant="177" id="DZr-RV-niL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Gi-xR-dA7">
+                        <rect key="frame" x="10" y="138" width="87" height="24"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bxj-zI-6ba">
+                        <rect key="frame" x="10" y="157.5" width="45" height="14.5"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                        <color key="textColor" red="0.92442220450000001" green="0.93524235489999996" blue="0.97208875419999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nTX-R1-m6g">
+                        <rect key="frame" x="149" y="144" width="18" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="nTX-R1-m6g" secondAttribute="height" multiplier="1:1" id="7jO-nG-5eT"/>
+                            <constraint firstAttribute="width" constant="18" id="oSF-aQ-g9x"/>
+                            <constraint firstAttribute="height" constant="18" id="vSY-Nm-xUX"/>
+                        </constraints>
                     </imageView>
                     <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="16f-IM-uOE" customClass="GradientView" customModule="Profile" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="137" width="177" height="40"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bxj-zI-6ba">
-                                <rect key="frame" x="3" y="23" width="42" height="14"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <color key="textColor" red="0.92442220450000001" green="0.93524235489999996" blue="0.97208875419999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nTX-R1-m6g">
-                                <rect key="frame" x="81" y="6" width="15" height="15"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="nTX-R1-m6g" secondAttribute="height" multiplier="1:1" id="7jO-nG-5eT"/>
-                                    <constraint firstAttribute="width" constant="15" id="oSF-aQ-g9x"/>
-                                    <constraint firstAttribute="height" constant="15" id="vSY-Nm-xUX"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Gi-xR-dA7">
-                                <rect key="frame" x="3" y="2" width="73.5" height="19.5"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.75873007550335569" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="0Gi-xR-dA7" firstAttribute="leading" secondItem="16f-IM-uOE" secondAttribute="leading" constant="3" id="ASj-G0-D8h"/>
-                            <constraint firstItem="Bxj-zI-6ba" firstAttribute="leading" secondItem="16f-IM-uOE" secondAttribute="leading" constant="3" id="Dv5-Wq-HUk"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="EFv-t1-alf"/>
                             <constraint firstAttribute="width" constant="177" id="P1H-Hd-LRr"/>
                             <constraint firstAttribute="height" constant="40" id="cZa-a3-fZb"/>
-                            <constraint firstAttribute="bottom" secondItem="Bxj-zI-6ba" secondAttribute="bottom" constant="3" id="j1x-Fm-9wh"/>
-                            <constraint firstItem="nTX-R1-m6g" firstAttribute="top" secondItem="16f-IM-uOE" secondAttribute="top" constant="6" id="jXT-rH-T6S"/>
-                            <constraint firstItem="nTX-R1-m6g" firstAttribute="leading" secondItem="0Gi-xR-dA7" secondAttribute="trailing" constant="4.5" id="oVY-5O-kR3"/>
-                            <constraint firstItem="0Gi-xR-dA7" firstAttribute="top" secondItem="16f-IM-uOE" secondAttribute="top" constant="2" id="y3w-No-HPa"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -74,9 +70,20 @@
                 </subviews>
             </view>
             <constraints>
+                <constraint firstItem="Bxj-zI-6ba" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="A6z-yy-Jad"/>
+                <constraint firstAttribute="trailing" secondItem="16f-IM-uOE" secondAttribute="trailing" id="BoJ-WP-aD6"/>
+                <constraint firstItem="Ele-rJ-uLd" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="EaJ-6t-o23"/>
+                <constraint firstItem="16f-IM-uOE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Lbl-eC-AOr"/>
                 <constraint firstItem="16f-IM-uOE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="LlZ-0e-xnR"/>
+                <constraint firstItem="0Gi-xR-dA7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Lov-zT-N7c"/>
+                <constraint firstAttribute="bottom" secondItem="Ele-rJ-uLd" secondAttribute="bottom" id="Nbq-tH-XUI"/>
+                <constraint firstAttribute="bottom" secondItem="nTX-R1-m6g" secondAttribute="bottom" constant="15" id="aRA-EV-Xhl"/>
                 <constraint firstAttribute="bottom" secondItem="16f-IM-uOE" secondAttribute="bottom" id="cXz-fg-YKq"/>
+                <constraint firstAttribute="bottom" secondItem="Bxj-zI-6ba" secondAttribute="bottom" constant="5" id="ejL-yD-7TQ"/>
                 <constraint firstAttribute="trailing" secondItem="16f-IM-uOE" secondAttribute="trailing" id="gSo-uk-tjg"/>
+                <constraint firstAttribute="bottom" secondItem="0Gi-xR-dA7" secondAttribute="bottom" constant="15" id="iTT-Bb-Xmq"/>
+                <constraint firstAttribute="trailing" secondItem="nTX-R1-m6g" secondAttribute="trailing" constant="10" id="mTg-ft-RuB"/>
+                <constraint firstAttribute="bottom" secondItem="16f-IM-uOE" secondAttribute="bottom" id="scd-iB-KYl"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>

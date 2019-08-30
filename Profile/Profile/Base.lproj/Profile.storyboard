@@ -77,6 +77,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="editProfileButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eNV-H9-OgI"/>
+                                    <segue destination="AE4-FJ-lFq" kind="show" id="uNv-uI-1fa"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="f0E-LT-sk9">
@@ -134,7 +135,6 @@
                         <outlet property="ownerVerif" destination="SYM-R8-Mj4" id="prc-Xc-i8T"/>
                         <outlet property="verifImage" destination="f0E-LT-sk9" id="zGS-OS-Zg5"/>
                         <segue destination="5tI-uR-Z6X" kind="show" identifier="viewImageSegue" id="pot-oh-zuy"/>
-                        <segue destination="AE4-FJ-lFq" kind="show" identifier="editProfile" id="n1O-iv-g4p"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

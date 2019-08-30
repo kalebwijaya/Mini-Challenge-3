@@ -20,7 +20,7 @@ class EditProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        ownerPic.image = UIImage(named: photo)
+//        ownerPic.image = UIImage(named: photo)
         ownerPic.layer.cornerRadius = ownerPic.frame.height/2
         
         let actionButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(editAccount))
