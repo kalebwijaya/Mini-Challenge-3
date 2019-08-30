@@ -29,10 +29,9 @@ class LoginViewController: UIViewController {
             showAlert(title: "Alert", message: "Fill valid password number")
         } else {
             //success
-            performSegue(withIdentifier: buttonSegueIdentifier, sender: sender)
+//            performSegue(withIdentifier: buttonSegueIdentifier, sender: sender)
         }
     }
-    
     
     func showAlert(title: String, message: String) {
         DispatchQueue.main.async {

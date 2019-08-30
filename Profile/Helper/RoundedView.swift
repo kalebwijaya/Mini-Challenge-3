@@ -10,14 +10,14 @@ import UIKit
 
 @IBDesignable class RoundedView: UIView {
 
-//    @IBInspectable var cornerRadius: CGFloat {
-//        get {
-//            return layer.cornerRadius
-//        }
-//        set {
-//            layer.cornerRadius = newValue
-//            layer.masksToBounds = false
-//        }
-//    }
+    @IBInspectable override var cornerRadius: CGFloat {
+        get {
+            return layer.cornerRadius
+        }
+        set {
+            layer.cornerRadius = newValue
+            layer.masksToBounds = false
+        }
+    }
 
 }
