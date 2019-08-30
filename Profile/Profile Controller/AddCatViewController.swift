@@ -13,7 +13,7 @@ class AddCatViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let actionButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(editCat))
+        let actionButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(addCat))
         self.navigationItem.rightBarButtonItem = actionButton
         
         let backButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(back))
@@ -22,7 +22,7 @@ class AddCatViewController: UIViewController {
         self.navigationItem.largeTitleDisplayMode = .never
     }
     
-    @objc func editCat() {
+    @objc func addCat() {
         
     }
     

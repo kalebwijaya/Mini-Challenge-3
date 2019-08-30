@@ -14,8 +14,13 @@ class ItemCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var catGender: UIImageView!
     @IBOutlet weak var catName: UILabel!
     @IBOutlet weak var catAge: UILabel!
+    @IBOutlet weak var bgView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
+                
+        catName.layer.zPosition = 1
+        catAge.layer.zPosition = 1
+        catGender.layer.zPosition = 1
         
         imageView.layer.cornerRadius = 6
         
@@ -23,7 +28,6 @@ class ItemCollectionViewCell: UICollectionViewCell {
         self.layer.shadowOffset = CGSize(width: 0, height: 5)
         self.layer.shadowOpacity = 0.5
         self.layer.masksToBounds = false
-        self.layer.shouldRasterize = true
         
         // Initialization code
     }

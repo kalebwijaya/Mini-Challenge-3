@@ -20,6 +20,7 @@ struct ownerData {
     var ownerName: String
     var ownerLocation: String
     var ownerVerification: String
+    var ownerPic: String
 }
 
 class ViewController: UIViewController {
@@ -31,17 +32,22 @@ class ViewController: UIViewController {
     @IBOutlet weak var verifImage: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var items:[ownerCat] = [ownerCat(imageName: "1", catName: "Si Orenji", catRace: "Persian", catGender: "Lady", catAge: "2 yr 3 mo"), ownerCat(imageName: "2", catName: "Timmy", catRace: "Shorthair", catGender: "Gentlecat", catAge: "2 yr"), ownerCat(imageName: "3", catName: "Bitsy", catRace: "Munchkin", catGender: "Lady", catAge: "3 yr 9 mo")]
-    var data = ownerData(ownerName: "Kaleb", ownerLocation: "Tangerang", ownerVerification: "Not Verified")
+    var items:[ownerCat] = [
+        ownerCat(imageName: "1", catName: "Si Orenji", catRace: "Persian", catGender: "Lady", catAge: "2 yr 3 mo"),
+        ownerCat(imageName: "2", catName: "Timmy", catRace: "Shorthair", catGender: "Gentlecat", catAge: "2 yr"),
+        ownerCat(imageName: "3", catName: "Bitsy", catRace: "Munchkin", catGender: "Lady", catAge: "3 yr 9 mo")]
+    var data = ownerData(ownerName: "Kaleb", ownerLocation: "Tangerang", ownerVerification: "Verified Owner", ownerPic: "2")
     
     var collectionViewFlowLayout : UICollectionViewFlowLayout!
     let cellIdentifier = "ItemCollectionViewCell"
     let imageViewSegueIdentifier = "viewImageSegue"
+    let editProfileSegueIdentifier = "editProfile"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupColletionView()
         
+        self.ownerPic.image = UIImage(named: data.ownerPic)
         ownerPic.layer.cornerRadius = ownerPic.frame.height/2
         
         ownerName.text = data.ownerName
@@ -67,6 +73,20 @@ class ViewController: UIViewController {
                 vc.gender = item.catGender
             }
         }
+        
+        if segue.identifier == editProfileSegueIdentifier{
+            let item = sender as! ownerData
+            if let ep = segue.destination as? EditProfileViewController {
+                ep.photo = item.ownerPic
+            }
+        }
+        
+    }
+    
+    @IBAction func editProfileButton(_ sender: Any) {
+//        button.tag = 5
+//        button.addTarget(self,action:#selector(buttonClicked),
+//                         forControlEvents:.TouchUpInside)
     }
     
     private func setupColletionView(){

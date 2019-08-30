@@ -40,7 +40,6 @@ class OwnerCatDetailVC: UIViewController {
         if let image = UIImage(named: name){
             catImage.image = image
         }
-        
         catName.text = self.name
         catRace.text = self.race
         catAge.text = self.age

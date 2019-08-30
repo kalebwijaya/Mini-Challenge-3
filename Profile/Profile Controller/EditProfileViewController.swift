@@ -10,10 +10,20 @@ import UIKit
 
 class EditProfileViewController: UIViewController {
 
+    @IBOutlet weak var ownerPic: UIImageView!
+    @IBOutlet weak var ownerName: UILabel!
+    @IBOutlet weak var locationButton: UIButton!
+    
+    var name: String!
+    var photo: String!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let actionButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(editCat))
+//        ownerPic.image = UIImage(named: photo)
+        ownerPic.layer.cornerRadius = ownerPic.frame.height/2
+        
+        let actionButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(editAccount))
         self.navigationItem.rightBarButtonItem = actionButton
         
         let backButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(back))
@@ -22,7 +32,7 @@ class EditProfileViewController: UIViewController {
         self.navigationItem.largeTitleDisplayMode = .never
     }
     
-    @objc func editCat() {
+    @objc func editAccount() {
         
     }
     
