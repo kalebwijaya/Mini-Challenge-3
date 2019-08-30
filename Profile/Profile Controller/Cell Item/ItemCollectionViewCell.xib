@@ -23,47 +23,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="177" height="177"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="16f-IM-uOE">
-                        <rect key="frame" x="0.0" y="144" width="177" height="33"/>
+                    <view alpha="0.69999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="16f-IM-uOE" customClass="GradientView" customModule="Profile" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="137" width="177" height="40"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Gi-xR-dA7">
-                                <rect key="frame" x="4" y="0.0" width="73.5" height="19.5"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="16"/>
-                                <color key="textColor" red="0.92442220450000001" green="0.93524235489999996" blue="0.97208875419999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bxj-zI-6ba">
-                                <rect key="frame" x="4" y="17" width="42" height="14"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="14" id="ScL-w3-xbz"/>
-                                </constraints>
+                                <rect key="frame" x="3" y="23" width="42" height="14"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" red="0.92442220450000001" green="0.93524235489999996" blue="0.97208875419999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nTX-R1-m6g">
-                                <rect key="frame" x="82.5" y="4" width="15" height="15"/>
+                                <rect key="frame" x="81" y="6" width="15" height="15"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="nTX-R1-m6g" secondAttribute="height" multiplier="1:1" id="7jO-nG-5eT"/>
                                     <constraint firstAttribute="width" constant="15" id="oSF-aQ-g9x"/>
                                     <constraint firstAttribute="height" constant="15" id="vSY-Nm-xUX"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Gi-xR-dA7">
+                                <rect key="frame" x="3" y="2" width="73.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.75873007550335569" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="0Gi-xR-dA7" firstAttribute="leading" secondItem="16f-IM-uOE" secondAttribute="leading" constant="4" id="CkI-Kf-eFn"/>
+                            <constraint firstItem="0Gi-xR-dA7" firstAttribute="leading" secondItem="16f-IM-uOE" secondAttribute="leading" constant="3" id="ASj-G0-D8h"/>
+                            <constraint firstItem="Bxj-zI-6ba" firstAttribute="leading" secondItem="16f-IM-uOE" secondAttribute="leading" constant="3" id="Dv5-Wq-HUk"/>
                             <constraint firstAttribute="width" constant="177" id="P1H-Hd-LRr"/>
-                            <constraint firstItem="Bxj-zI-6ba" firstAttribute="leading" secondItem="16f-IM-uOE" secondAttribute="leading" constant="4" id="a5g-6U-OeE"/>
-                            <constraint firstAttribute="bottom" secondItem="Bxj-zI-6ba" secondAttribute="bottom" constant="2" id="aYf-92-tu7"/>
-                            <constraint firstAttribute="height" constant="33" id="cZa-a3-fZb"/>
-                            <constraint firstItem="0Gi-xR-dA7" firstAttribute="top" secondItem="16f-IM-uOE" secondAttribute="top" id="dIA-oQ-czt"/>
-                            <constraint firstItem="nTX-R1-m6g" firstAttribute="top" secondItem="16f-IM-uOE" secondAttribute="top" constant="4" id="dyB-kJ-oO9"/>
-                            <constraint firstItem="nTX-R1-m6g" firstAttribute="leading" secondItem="0Gi-xR-dA7" secondAttribute="trailing" constant="5" id="viV-Oz-cZZ"/>
+                            <constraint firstAttribute="height" constant="40" id="cZa-a3-fZb"/>
+                            <constraint firstAttribute="bottom" secondItem="Bxj-zI-6ba" secondAttribute="bottom" constant="3" id="j1x-Fm-9wh"/>
+                            <constraint firstItem="nTX-R1-m6g" firstAttribute="top" secondItem="16f-IM-uOE" secondAttribute="top" constant="6" id="jXT-rH-T6S"/>
+                            <constraint firstItem="nTX-R1-m6g" firstAttribute="leading" secondItem="0Gi-xR-dA7" secondAttribute="trailing" constant="4.5" id="oVY-5O-kR3"/>
+                            <constraint firstItem="0Gi-xR-dA7" firstAttribute="top" secondItem="16f-IM-uOE" secondAttribute="top" constant="2" id="y3w-No-HPa"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                 <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color1">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color2">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
@@ -76,6 +80,7 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>
+                <outlet property="bgView" destination="16f-IM-uOE" id="giW-bk-QdC"/>
                 <outlet property="catAge" destination="Bxj-zI-6ba" id="aGO-vI-Ymp"/>
                 <outlet property="catGender" destination="nTX-R1-m6g" id="dIe-rw-UuX"/>
                 <outlet property="catName" destination="0Gi-xR-dA7" id="msq-Pn-bhU"/>

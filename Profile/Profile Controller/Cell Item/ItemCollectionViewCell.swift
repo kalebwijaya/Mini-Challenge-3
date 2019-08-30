@@ -14,8 +14,19 @@ class ItemCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var catGender: UIImageView!
     @IBOutlet weak var catName: UILabel!
     @IBOutlet weak var catAge: UILabel!
+    @IBOutlet weak var bgView: UIView!
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        let blurEffect = UIBlurEffect(style: UIBlurEffect.Style.dark)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = bgView.bounds
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        bgView.addSubview(blurEffectView)
+        
+        catName.layer.zPosition = 1
+        catAge.layer.zPosition = 1
+        catGender.layer.zPosition = 1
         
         imageView.layer.cornerRadius = 6
         
