@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="0yb-IX-bau">
+            <objects>
+                <viewController storyboardIdentifier="onboarding" id="8Ub-SQ-BnV" customClass="onboardingViewController" customModule="MC2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E6g-Va-uja">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="QqY-mK-mXm">
+                                <rect key="frame" x="179.5" y="504.5" width="55" height="37"/>
+                                <color key="pageIndicatorTintColor" red="0.99215686270000003" green="0.60392156860000001" blue="0.27450980390000002" alpha="0.45157320210000002" colorSpace="calibratedRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.99215686270000003" green="0.60392156860000001" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yG-V6-aeg">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="906"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="3yG-V6-aeg" firstAttribute="centerX" secondItem="b0w-8b-GMb" secondAttribute="centerX" id="1Jv-vQ-1cD"/>
+                            <constraint firstItem="3yG-V6-aeg" firstAttribute="centerY" secondItem="b0w-8b-GMb" secondAttribute="centerY" id="Ct5-LO-yXF"/>
+                            <constraint firstItem="3yG-V6-aeg" firstAttribute="leading" secondItem="b0w-8b-GMb" secondAttribute="leading" id="DYd-0b-1dS"/>
+                            <constraint firstItem="QqY-mK-mXm" firstAttribute="centerY" secondItem="E6g-Va-uja" secondAttribute="centerY" constant="75" id="rQe-Ce-089"/>
+                            <constraint firstItem="QqY-mK-mXm" firstAttribute="centerX" secondItem="E6g-Va-uja" secondAttribute="centerX" id="tOU-vz-EFR"/>
+                            <constraint firstItem="3yG-V6-aeg" firstAttribute="top" secondItem="b0w-8b-GMb" secondAttribute="top" constant="-44" id="vYH-5C-yxR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b0w-8b-GMb"/>
+                    </view>
+                    <connections>
+                        <outlet property="pageControl" destination="QqY-mK-mXm" id="85p-wQ-9wb"/>
+                        <outlet property="scrollView" destination="3yG-V6-aeg" id="hDc-mw-lfU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VAL-hW-ZsS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="506" y="140"/>
+        </scene>
+    </scenes>
+</document>
