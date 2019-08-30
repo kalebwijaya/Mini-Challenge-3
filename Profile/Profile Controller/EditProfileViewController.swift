@@ -1,14 +1,14 @@
 //
-//  AddCatViewController.swift
+//  EditViewController.swift
 //  Profile
 //
-//  Created by Delvin on 29/08/19.
+//  Created by Delvin on 22/08/19.
 //  Copyright © 2019 Delvin. All rights reserved.
 //
 
 import UIKit
 
-class AddCatViewController: UIViewController {
+class EditProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +29,7 @@ class AddCatViewController: UIViewController {
     @objc func back(){
         self.navigationController?.popViewController(animated: true)
     }
+    
 
     /*
     // MARK: - Navigation
