@@ -107,6 +107,7 @@
 		EB76BD1C231767B000B3F534 /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				F163A1EA230E74570093DD32 /* AppDelegate.swift */,
 				EB76BD1F231769F200B3F534 /* Extension.swift */,
 				EB76BD20231769F200B3F534 /* GradientView.swift */,
 				EB76BD1E231769F200B3F534 /* RoundedButton.swift */,
@@ -158,7 +159,6 @@
 				EB76BD2523176D6F00B3F534 /* Edit Cat */,
 				EB76BD1C231767B000B3F534 /* Helper */,
 				EB76BD1B2317673300B3F534 /* Login Controller */,
-				F163A1EA230E74570093DD32 /* AppDelegate.swift */,
 				F163A1EE230E74570093DD32 /* Main.storyboard */,
 				F1A56C5823153F0D00C8F75F /* Profile.storyboard */,
 				EB76BD3223176F7600B3F534 /* Login.storyboard */,

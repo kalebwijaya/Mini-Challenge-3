@@ -52,6 +52,7 @@
                                     <attributes>
                                         <color key="NSColor" red="0.93834561110000003" green="0.53492856030000002" blue="0.43441373109999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <font key="NSFont" metaFont="system" size="17"/>
+                                        <integer key="NSUnderline" value="1"/>
                                     </attributes>
                                 </fragment>
                             </attributedString>
@@ -73,9 +74,12 @@
                                 <color key="value" red="0.93834561110000003" green="0.53492856030000002" blue="0.43441373109999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                <real key="value" value="1"/>
+                                <real key="value" value="3"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="pressChatButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="rf0-bV-whD"/>
+                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Range" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hIp-DA-8lb">
                         <rect key="frame" x="151.5" y="34" width="49" height="21"/>

@@ -43,15 +43,14 @@ class LikeCollectionViewController: UICollectionViewController {
     func setupCollectionViewItemSize(){
         if collectionViewFlowLayout == nil{
             let numberOfItemRow:CGFloat = 1
-            let lineSpacing:CGFloat = 10
-            let interItemSpacing:CGFloat = 20
+            let lineSpacing:CGFloat = 5
+            let interItemSpacing:CGFloat = 10
             
             let width = (collectionView.frame.width - (numberOfItemRow - 1) * interItemSpacing) / numberOfItemRow
-            let height = width
             
             collectionViewFlowLayout = UICollectionViewFlowLayout()
             
-            collectionViewFlowLayout.itemSize = CGSize(width: width, height: height)
+            collectionViewFlowLayout.itemSize = CGSize(width: width, height: 97)
             collectionViewFlowLayout.sectionInset = UIEdgeInsets.zero
             collectionViewFlowLayout.scrollDirection = .vertical
             collectionViewFlowLayout.minimumLineSpacing = lineSpacing

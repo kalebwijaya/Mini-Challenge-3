@@ -19,16 +19,17 @@ class LikeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var chatButton: UIButton!
     
     var usr_phone: Int?
-    var pic = #imageLiteral(resourceName: "like")
+    var pic = #imageLiteral(resourceName: "image_3")
     
+    @IBAction func pressChatButton(_ sender: Any) {
+        usr_phone = 6287775771376
+        UIApplication.shared.open(URL(string:"https://api.whatsapp.com/send?phone="+"\(String(describing: usr_phone))")!)
+    }
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-//        self.likeOwnerView.register(UINib.init(nibName: “likeCell”, bundle: nil), forCellWithReuseIdentifier: “likeCell”)
+
+        ownerPhoto.layer.cornerRadius=6
         ownerPhoto.image = pic
-        
-//        UIApplication.shared.open(URL(string:"https://api.whatsapp.com/send?phone=82165658747")!)
-        UIApplication.shared.open(URL(string:"https://api.whatsapp.com/send?phone="+"\(String(describing: usr_phone))")!)
     }
 
 }
