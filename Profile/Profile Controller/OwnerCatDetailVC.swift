@@ -11,6 +11,8 @@ import UIKit
 
 class OwnerCatDetailVC: UIViewController {
     
+    @IBOutlet weak var myScrollView: UIScrollView!
+    
     @IBOutlet weak var catImage: UIImageView!
     @IBOutlet weak var catName: UILabel!
     @IBOutlet weak var catRace: UILabel!
@@ -27,10 +29,13 @@ class OwnerCatDetailVC: UIViewController {
     var race: String!
     var gender: String!
     
+    lazy var contentViewSize = CGSize(width: self.view.frame.width, height: self.view.frame.height)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupImageView()
+        
+        myScrollView.contentSize = contentViewSize
         // Do any additional setup after loading the view.
     }
     

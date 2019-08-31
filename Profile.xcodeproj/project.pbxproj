@@ -28,9 +28,9 @@
 		F163A205230E80C40093DD32 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F163A203230E80C40093DD32 /* ItemCollectionViewCell.xib */; };
 		F163A207230E81A40093DD32 /* OwnerCatDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F163A206230E81A40093DD32 /* OwnerCatDetailVC.swift */; };
 		F16D02BC2317CBD200EE668A /* AddCatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16D02BB2317CBD200EE668A /* AddCatViewController.swift */; };
-		F1A56C522313BA5900C8F75F /* LikedByTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A56C502313BA5900C8F75F /* LikedByTableViewCell.swift */; };
-		F1A56C532313BA5900C8F75F /* LikedByTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1A56C512313BA5900C8F75F /* LikedByTableViewCell.xib */; };
-		F1A56C572313CF5A00C8F75F /* LikeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A56C562313CF5A00C8F75F /* LikeTableViewController.swift */; };
+		F1965242231A3011001C7CF0 /* LikeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1965240231A3011001C7CF0 /* LikeCollectionViewCell.swift */; };
+		F1965243231A3011001C7CF0 /* LikeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1965241231A3011001C7CF0 /* LikeCollectionViewCell.xib */; };
+		F1965245231A3545001C7CF0 /* LikeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1965244231A3545001C7CF0 /* LikeCollectionViewController.swift */; };
 		F1A56C5A23153F0D00C8F75F /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1A56C5823153F0D00C8F75F /* Profile.storyboard */; };
 		F1A56C6023153FB700C8F75F /* YourCatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A56C5D23153FB700C8F75F /* YourCatViewController.swift */; };
 		F1A56C6123153FB700C8F75F /* ImageViewerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A56C5E23153FB700C8F75F /* ImageViewerViewController.swift */; };
@@ -64,9 +64,9 @@
 		F163A203230E80C40093DD32 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		F163A206230E81A40093DD32 /* OwnerCatDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerCatDetailVC.swift; sourceTree = "<group>"; };
 		F16D02BB2317CBD200EE668A /* AddCatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCatViewController.swift; sourceTree = "<group>"; };
-		F1A56C502313BA5900C8F75F /* LikedByTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikedByTableViewCell.swift; sourceTree = "<group>"; };
-		F1A56C512313BA5900C8F75F /* LikedByTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikedByTableViewCell.xib; sourceTree = "<group>"; };
-		F1A56C562313CF5A00C8F75F /* LikeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeTableViewController.swift; sourceTree = "<group>"; };
+		F1965240231A3011001C7CF0 /* LikeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeCollectionViewCell.swift; sourceTree = "<group>"; };
+		F1965241231A3011001C7CF0 /* LikeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikeCollectionViewCell.xib; sourceTree = "<group>"; };
+		F1965244231A3545001C7CF0 /* LikeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeCollectionViewController.swift; sourceTree = "<group>"; };
 		F1A56C5923153F0D00C8F75F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Profile/Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
 		F1A56C5D23153FB700C8F75F /* YourCatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YourCatViewController.swift; sourceTree = "<group>"; };
 		F1A56C5E23153FB700C8F75F /* ImageViewerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewerViewController.swift; sourceTree = "<group>"; };
@@ -158,10 +158,10 @@
 				F163A1EC230E74570093DD32 /* ViewController.swift */,
 				F163A200230E7FC30093DD32 /* EditProfileViewController.swift */,
 				F163A206230E81A40093DD32 /* OwnerCatDetailVC.swift */,
-				F1A56C562313CF5A00C8F75F /* LikeTableViewController.swift */,
-				F1A56C5B23153F3300C8F75F /* Cell Item */,
-				F16D02BB2317CBD200EE668A /* AddCatViewController.swift */,
+				F1965244231A3545001C7CF0 /* LikeCollectionViewController.swift */,
 				F1CD45F02317E59A00F253A7 /* EditCatViewController.swift */,
+				F16D02BB2317CBD200EE668A /* AddCatViewController.swift */,
+				F1A56C5B23153F3300C8F75F /* Cell Item */,
 			);
 			path = "Profile Controller";
 			sourceTree = "<group>";
@@ -171,8 +171,8 @@
 			children = (
 				F163A202230E80C40093DD32 /* ItemCollectionViewCell.swift */,
 				F163A203230E80C40093DD32 /* ItemCollectionViewCell.xib */,
-				F1A56C502313BA5900C8F75F /* LikedByTableViewCell.swift */,
-				F1A56C512313BA5900C8F75F /* LikedByTableViewCell.xib */,
+				F1965240231A3011001C7CF0 /* LikeCollectionViewCell.swift */,
+				F1965241231A3011001C7CF0 /* LikeCollectionViewCell.xib */,
 			);
 			path = "Cell Item";
 			sourceTree = "<group>";
@@ -257,8 +257,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1A56C5A23153F0D00C8F75F /* Profile.storyboard in Resources */,
+				F1965243231A3011001C7CF0 /* LikeCollectionViewCell.xib in Resources */,
 				F163A1F5230E74580093DD32 /* LaunchScreen.storyboard in Resources */,
-				F1A56C532313BA5900C8F75F /* LikedByTableViewCell.xib in Resources */,
 				F1A56C6723153FEF00C8F75F /* MatchCollectionViewCell.xib in Resources */,
 				F163A205230E80C40093DD32 /* ItemCollectionViewCell.xib in Resources */,
 				F163A1F2230E74580093DD32 /* Assets.xcassets in Resources */,
@@ -281,19 +281,19 @@
 				F1A56C6123153FB700C8F75F /* ImageViewerViewController.swift in Sources */,
 				EB76BD2F23176DEF00B3F534 /* LoginViewController.swift in Sources */,
 				F163A1ED230E74570093DD32 /* ViewController.swift in Sources */,
+				F1965242231A3011001C7CF0 /* LikeCollectionViewCell.swift in Sources */,
 				EB76BD2D23176DD600B3F534 /* CatEditViewController.swift in Sources */,
 				F163A204230E80C40093DD32 /* ItemCollectionViewCell.swift in Sources */,
 				EB76BD24231769F200B3F534 /* GradientView.swift in Sources */,
 				F1CD45F12317E59A00F253A7 /* EditCatViewController.swift in Sources */,
 				F163A1EB230E74570093DD32 /* AppDelegate.swift in Sources */,
-				F1A56C572313CF5A00C8F75F /* LikeTableViewController.swift in Sources */,
 				EB76BD3123176E0300B3F534 /* RegisterViewController.swift in Sources */,
 				EB76BD21231769F200B3F534 /* RoundedView.swift in Sources */,
 				F1A56C6023153FB700C8F75F /* YourCatViewController.swift in Sources */,
 				51D5C6A5231691B300695724 /* LikeButton.swift in Sources */,
 				F163A207230E81A40093DD32 /* OwnerCatDetailVC.swift in Sources */,
 				EB76BD22231769F200B3F534 /* RoundedButton.swift in Sources */,
-				F1A56C522313BA5900C8F75F /* LikedByTableViewCell.swift in Sources */,
+				F1965245231A3545001C7CF0 /* LikeCollectionViewController.swift in Sources */,
 				F16D02BC2317CBD200EE668A /* AddCatViewController.swift in Sources */,
 				EB76BD2B23176DC900B3F534 /* PhotoGalleryViewCell.swift in Sources */,
 				F163A201230E7FC30093DD32 /* EditProfileViewController.swift in Sources */,
@@ -451,7 +451,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 46X9JWL5UU;
+				DEVELOPMENT_TEAM = DYL2G75B8U;
 				INFOPLIST_FILE = Profile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -469,7 +469,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 46X9JWL5UU;
+				DEVELOPMENT_TEAM = DYL2G75B8U;
 				INFOPLIST_FILE = Profile/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
