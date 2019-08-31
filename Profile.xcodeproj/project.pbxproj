@@ -18,6 +18,10 @@
 		EB76BD2F23176DEF00B3F534 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76BD2E23176DEF00B3F534 /* LoginViewController.swift */; };
 		EB76BD3123176E0300B3F534 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76BD3023176E0300B3F534 /* RegisterViewController.swift */; };
 		EB76BD3323176F7600B3F534 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB76BD3223176F7600B3F534 /* Login.storyboard */; };
+		EBE0462223193FF900657E6F /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE0462123193FF900657E6F /* OnBoarding.storyboard */; };
+		EBE046252319404100657E6F /* onboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE046242319404100657E6F /* onboardingViewController.swift */; };
+		EBE046282319406000657E6F /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBE046262319405F00657E6F /* Slide.xib */; };
+		EBE046292319406000657E6F /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE046272319405F00657E6F /* Slide.swift */; };
 		F163A1EB230E74570093DD32 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F163A1EA230E74570093DD32 /* AppDelegate.swift */; };
 		F163A1ED230E74570093DD32 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F163A1EC230E74570093DD32 /* ViewController.swift */; };
 		F163A1F0230E74570093DD32 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F163A1EE230E74570093DD32 /* Main.storyboard */; };
@@ -52,6 +56,10 @@
 		EB76BD2E23176DEF00B3F534 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EB76BD3023176E0300B3F534 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		EB76BD3223176F7600B3F534 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		EBE0462123193FF900657E6F /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
+		EBE046242319404100657E6F /* onboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = onboardingViewController.swift; sourceTree = "<group>"; };
+		EBE046262319405F00657E6F /* Slide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		EBE046272319405F00657E6F /* Slide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		F163A1E7230E74570093DD32 /* Profile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Profile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F163A1EA230E74570093DD32 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F163A1EC230E74570093DD32 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +125,16 @@
 			path = "Edit Cat";
 			sourceTree = "<group>";
 		};
+		EBE046232319403200657E6F /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				EBE046242319404100657E6F /* onboardingViewController.swift */,
+				EBE046272319405F00657E6F /* Slide.swift */,
+				EBE046262319405F00657E6F /* Slide.xib */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
 		F163A1DE230E74570093DD32 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +154,7 @@
 		F163A1E9230E74570093DD32 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				EBE046232319403200657E6F /* OnBoarding */,
 				EB76BD2523176D6F00B3F534 /* Edit Cat */,
 				EB76BD1C231767B000B3F534 /* Helper */,
 				EB76BD1B2317673300B3F534 /* Login Controller */,
@@ -143,6 +162,7 @@
 				F163A1EE230E74570093DD32 /* Main.storyboard */,
 				F1A56C5823153F0D00C8F75F /* Profile.storyboard */,
 				EB76BD3223176F7600B3F534 /* Login.storyboard */,
+				EBE0462123193FF900657E6F /* OnBoarding.storyboard */,
 				F163A208230E91DC0093DD32 /* Profile Controller */,
 				F1A56C5C23153F5100C8F75F /* Match Controller */,
 				F163A1F1230E74580093DD32 /* Assets.xcassets */,
@@ -260,11 +280,13 @@
 				F1965243231A3011001C7CF0 /* LikeCollectionViewCell.xib in Resources */,
 				F163A1F5230E74580093DD32 /* LaunchScreen.storyboard in Resources */,
 				F1A56C6723153FEF00C8F75F /* MatchCollectionViewCell.xib in Resources */,
+				EBE046282319406000657E6F /* Slide.xib in Resources */,
 				F163A205230E80C40093DD32 /* ItemCollectionViewCell.xib in Resources */,
 				F163A1F2230E74580093DD32 /* Assets.xcassets in Resources */,
 				EB76BD2923176DC200B3F534 /* PhotoGalleryViewCell.xib in Resources */,
 				F163A1F0230E74570093DD32 /* Main.storyboard in Resources */,
 				EB76BD3323176F7600B3F534 /* Login.storyboard in Resources */,
+				EBE0462223193FF900657E6F /* OnBoarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,8 +312,10 @@
 				EB76BD3123176E0300B3F534 /* RegisterViewController.swift in Sources */,
 				EB76BD21231769F200B3F534 /* RoundedView.swift in Sources */,
 				F1A56C6023153FB700C8F75F /* YourCatViewController.swift in Sources */,
+				EBE046292319406000657E6F /* Slide.swift in Sources */,
 				51D5C6A5231691B300695724 /* LikeButton.swift in Sources */,
 				F163A207230E81A40093DD32 /* OwnerCatDetailVC.swift in Sources */,
+				EBE046252319404100657E6F /* onboardingViewController.swift in Sources */,
 				EB76BD22231769F200B3F534 /* RoundedButton.swift in Sources */,
 				F1965245231A3545001C7CF0 /* LikeCollectionViewController.swift in Sources */,
 				F16D02BC2317CBD200EE668A /* AddCatViewController.swift in Sources */,
