@@ -8,16 +8,27 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var emailTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
     
-    let buttonSegueIdentifier = "toEdit"
+    let buttonSegueIdentifier = "toProfil"
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        delegateView()
         // Do any additional setup after loading the view.
+    }
+    
+    private func delegateView() {
+        self.emailTF.delegate = self
+        self.passwordTF.delegate = self
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
     
     @IBAction func loginAction(_ sender: UIButton) {
@@ -28,8 +39,8 @@ class LoginViewController: UIViewController {
         } else if passTFLength < 4 {
             showAlert(title: "Alert", message: "Fill valid password number")
         } else {
-            //success
-//            performSegue(withIdentifier: buttonSegueIdentifier, sender: sender)
+//            success
+            performSegue(withIdentifier: buttonSegueIdentifier, sender: sender)
         }
     }
     

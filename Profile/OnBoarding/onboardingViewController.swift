@@ -10,7 +10,7 @@ import UIKit
 
 class onboardingViewController: UIViewController, UIScrollViewDelegate, OnBoardingInputData {
     func didTap() {
-        performSegue(withIdentifier: "register1", sender: self)
+        performSegue(withIdentifier: "toLogin", sender: self)
     }
 
     //create scroll view outlet
@@ -44,29 +44,29 @@ class onboardingViewController: UIViewController, UIScrollViewDelegate, OnBoardi
         let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide1.backgroundView.image = UIImage(named: "bg01")
         slide1.imageView.image = UIImage(named: "image_1")
-        slide1.mainTitle.text = "Selamat Datang"
-        slide1.descLabel.text = "Kami akan membantu anda mencari partner kawin kucing anda"
+        slide1.mainTitle.text = "Cating - Cat Mating Apps"
+        slide1.descLabel.text = "Aplikasi akan membantu kamu mencarikan partner kawin buat kucing kamu"
         slide1.pushButton.isHidden = true
         
         let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide2.backgroundView.image = UIImage(named: "bg02")
-        slide2.imageView.image = UIImage(named: "image_2")
+        slide2.imageView.image = UIImage(named: "onboarding02")
         slide2.mainTitle.text = "Cating - Cat Mating Apps"
-        slide2.descLabel.text = "Aplikasi yang membantu anda menemukan partner kawin kucing anda"
+        slide2.descLabel.text = "Aplikasi yang membantu kamu menemukan partner kawin kucing kamu sesuai keinginan kamu!"
         slide2.pushButton.isHidden = true
         
         let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide3.backgroundView.image = UIImage(named: "bg03")
-        slide3.imageView.image = UIImage(named: "image_3")
+        slide3.imageView.image = UIImage(named: "onboarding03")
         slide3.mainTitle.text = "Detail Kucing"
-        slide3.descLabel.text = "Anda dapat melihat profil kucing orang lain, mulai dari ras, umur, bahkan data vaksin"
+        slide3.descLabel.text = "Kamu dapat melihat profil kucing orang lain, mulai dari ras, umur, bahkan data vaksin"
         slide3.pushButton.isHidden = true
         
         let slide4:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide4.backgroundView.image = UIImage(named: "bg04")
-        slide4.imageView.image = UIImage(named: "image_4")
+        slide4.imageView.image = UIImage(named: "onboarding04")
         slide4.mainTitle.text = "Suka dan mulai Chat"
-        slide4.descLabel.text = "Kamu tingga 'Like' kucing orang lain dan tunggu pemilik kucing chat anda!"
+        slide4.descLabel.text = "Kamu tingga 'Like' kucing orang lain dan tunggu pemilik kucing chat kamu!"
         slide4.listener = self
         return [slide1, slide2, slide3, slide4]
         
@@ -129,8 +129,6 @@ class onboardingViewController: UIViewController, UIScrollViewDelegate, OnBoardi
         }
     }
 }
-
-// untuk menghubungkan button di slide UIView (Custom)
 
     protocol OnBoardingInputData {
         func didTap()
