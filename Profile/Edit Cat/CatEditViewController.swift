@@ -1,7 +1,6 @@
 //
 //  CatEditViewController.swift
 //  MC3login
-//
 //  Created by Fauzi Fauzi on 26/08/19.
 //  Copyright © 2019 fauzify. All rights reserved.
 
@@ -17,9 +16,9 @@ class CatEditViewController: UIViewController{
     
     var items:[ImageCat] = [
         ImageCat(imageName: "cat01", isSet: true),
-        ImageCat(imageName: "cat01", isSet: false),
-        ImageCat(imageName: "cat01", isSet: false),
-        ImageCat(imageName: "cat01", isSet: false),
+        ImageCat(imageName: "1", isSet: false),
+        ImageCat(imageName: "2", isSet: false),
+        ImageCat(imageName: "4", isSet: false),
         ImageCat(imageName: "cat01", isSet: false),
         ImageCat(imageName: "", isSet: false)]
     
@@ -35,7 +34,6 @@ class CatEditViewController: UIViewController{
         
         let backButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(back))
         self.navigationItem.leftBarButtonItem = backButton
-        
         self.navigationItem.largeTitleDisplayMode = .never
     }
     
