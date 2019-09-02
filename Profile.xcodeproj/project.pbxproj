@@ -32,6 +32,7 @@
 		F163A205230E80C40093DD32 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F163A203230E80C40093DD32 /* ItemCollectionViewCell.xib */; };
 		F163A207230E81A40093DD32 /* OwnerCatDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F163A206230E81A40093DD32 /* OwnerCatDetailVC.swift */; };
 		F16D02BC2317CBD200EE668A /* AddCatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16D02BB2317CBD200EE668A /* AddCatViewController.swift */; };
+		F184EC75231D046A008141C0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F184EC74231D046A008141C0 /* MapViewController.swift */; };
 		F1965242231A3011001C7CF0 /* LikeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1965240231A3011001C7CF0 /* LikeCollectionViewCell.swift */; };
 		F1965243231A3011001C7CF0 /* LikeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1965241231A3011001C7CF0 /* LikeCollectionViewCell.xib */; };
 		F1965245231A3545001C7CF0 /* LikeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1965244231A3545001C7CF0 /* LikeCollectionViewController.swift */; };
@@ -41,7 +42,6 @@
 		F1A56C6223153FB700C8F75F /* ChooseCatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A56C5F23153FB700C8F75F /* ChooseCatViewController.swift */; };
 		F1A56C6623153FEF00C8F75F /* MatchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A56C6423153FEF00C8F75F /* MatchCollectionViewCell.swift */; };
 		F1A56C6723153FEF00C8F75F /* MatchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1A56C6523153FEF00C8F75F /* MatchCollectionViewCell.xib */; };
-		F1CD45F12317E59A00F253A7 /* EditCatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CD45F02317E59A00F253A7 /* EditCatViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +72,7 @@
 		F163A203230E80C40093DD32 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		F163A206230E81A40093DD32 /* OwnerCatDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerCatDetailVC.swift; sourceTree = "<group>"; };
 		F16D02BB2317CBD200EE668A /* AddCatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCatViewController.swift; sourceTree = "<group>"; };
+		F184EC74231D046A008141C0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F1965240231A3011001C7CF0 /* LikeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeCollectionViewCell.swift; sourceTree = "<group>"; };
 		F1965241231A3011001C7CF0 /* LikeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikeCollectionViewCell.xib; sourceTree = "<group>"; };
 		F1965244231A3545001C7CF0 /* LikeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeCollectionViewController.swift; sourceTree = "<group>"; };
@@ -81,7 +82,6 @@
 		F1A56C5F23153FB700C8F75F /* ChooseCatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChooseCatViewController.swift; sourceTree = "<group>"; };
 		F1A56C6423153FEF00C8F75F /* MatchCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchCollectionViewCell.swift; sourceTree = "<group>"; };
 		F1A56C6523153FEF00C8F75F /* MatchCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MatchCollectionViewCell.xib; sourceTree = "<group>"; };
-		F1CD45F02317E59A00F253A7 /* EditCatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditCatViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,8 +179,8 @@
 				F163A200230E7FC30093DD32 /* EditProfileViewController.swift */,
 				F163A206230E81A40093DD32 /* OwnerCatDetailVC.swift */,
 				F1965244231A3545001C7CF0 /* LikeCollectionViewController.swift */,
-				F1CD45F02317E59A00F253A7 /* EditCatViewController.swift */,
 				F16D02BB2317CBD200EE668A /* AddCatViewController.swift */,
+				F184EC74231D046A008141C0 /* MapViewController.swift */,
 				F1A56C5B23153F3300C8F75F /* Cell Item */,
 			);
 			path = "Profile Controller";
@@ -304,10 +304,10 @@
 				EB76BD2F23176DEF00B3F534 /* LoginViewController.swift in Sources */,
 				F163A1ED230E74570093DD32 /* ViewController.swift in Sources */,
 				F1965242231A3011001C7CF0 /* LikeCollectionViewCell.swift in Sources */,
+				F184EC75231D046A008141C0 /* MapViewController.swift in Sources */,
 				EB76BD2D23176DD600B3F534 /* CatEditViewController.swift in Sources */,
 				F163A204230E80C40093DD32 /* ItemCollectionViewCell.swift in Sources */,
 				EB76BD24231769F200B3F534 /* GradientView.swift in Sources */,
-				F1CD45F12317E59A00F253A7 /* EditCatViewController.swift in Sources */,
 				EB76BD3123176E0300B3F534 /* RegisterViewController.swift in Sources */,
 				EB76BD21231769F200B3F534 /* RoundedView.swift in Sources */,
 				F1A56C6023153FB700C8F75F /* YourCatViewController.swift in Sources */,
