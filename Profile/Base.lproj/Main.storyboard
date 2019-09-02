@@ -307,6 +307,11 @@
                                         <state key="normal" title="Register">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="RegisterAction:" destination="xg8-iv-8dF" eventType="touchUpInside" id="lsu-96-pOd"/>
                                         </connections>
@@ -625,6 +630,11 @@ If any provision (or part of a provision) of these App Terms is found by any cou
                                         <state key="normal" title="Log in">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="loginAction:" destination="VVm-XL-B6Y" eventType="touchUpInside" id="kUE-ep-xvl"/>
                                         </connections>
@@ -728,7 +738,7 @@ If any provision (or part of a provision) of these App Terms is found by any cou
         <image name="unlike" width="41" height="38"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="IKX-87-UpN"/>
+        <segue reference="uGD-b5-trf"/>
         <segue reference="9HT-wr-RD4"/>
     </inferredMetricsTieBreakers>
 </document>
