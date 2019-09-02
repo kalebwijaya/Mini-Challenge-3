@@ -29,14 +29,12 @@ class MapViewController: UIViewController {
         self.navigationItem.rightBarButtonItem = actionButton
         
         self.navigationItem.largeTitleDisplayMode = .never
+        
     }
     
     @objc func getLocation() {
         if(currLoc != nil){
             self.navigationController?.popViewController(animated: true)
-//            let main = UIStoryboard(name: "Profile", bundle: nil)
-//            let second = main.instantiateViewController(withIdentifier: "editProfile")
-//            self.present(second, animated: true)
         }
         else {
             getLocLabel.text = "Please Wait"
@@ -82,5 +80,6 @@ extension MapViewController : CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("error:: \(error.localizedDescription)")
+        self.navigationController?.popViewController(animated: true)
     }
 }
