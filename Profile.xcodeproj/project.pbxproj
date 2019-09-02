@@ -111,7 +111,6 @@
 				EB76BD20231769F200B3F534 /* GradientView.swift */,
 				EB76BD1E231769F200B3F534 /* RoundedButton.swift */,
 				EB76BD1D231769F200B3F534 /* RoundedView.swift */,
-				EB96F01C231CEBF700ED33BB /* AppDeletate.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -155,6 +154,7 @@
 		F163A1E9230E74570093DD32 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				EB96F01C231CEBF700ED33BB /* AppDeletate.swift */,
 				EBE046232319403200657E6F /* OnBoarding */,
 				EB76BD2523176D6F00B3F534 /* Edit Cat */,
 				EB76BD1C231767B000B3F534 /* Helper */,
