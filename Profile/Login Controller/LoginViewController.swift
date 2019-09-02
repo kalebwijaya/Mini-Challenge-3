@@ -37,7 +37,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         if (emailTF.text!.isEmpty ||  passwordTF.text!.isEmpty) {
             showAlert(title: "Alert", message: "All text field must be filled")
         } else if passTFLength < 4 {
-            showAlert(title: "Alert", message: "Fill valid password number")
+            showAlert(title: "Alert", message: "at least 4 characters")
         } else {
 //            success
             performSegue(withIdentifier: buttonSegueIdentifier, sender: sender)

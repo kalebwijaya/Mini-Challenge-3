@@ -125,7 +125,7 @@ class onboardingViewController: UIViewController, UIScrollViewDelegate, OnBoardi
             slides[3].imageView.transform = CGAffineTransform(scaleX: percentOffset.x, y: percentOffset.x)
             
         } else if(percentOffset.x > 0.75 && percentOffset.x <= 1) {
-            slides[3].imageView.transform = CGAffineTransform(scaleX: (1.15-percentOffset.x)/0.25, y: (1.15-percentOffset.x)/0.25)
+            slides[3].imageView.transform = CGAffineTransform(scaleX: (1.25-percentOffset.x)/0.25, y: (1.25-percentOffset.x)/0.25)
         }
     }
 }
