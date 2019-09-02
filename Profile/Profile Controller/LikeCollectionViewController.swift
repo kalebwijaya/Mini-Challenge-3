@@ -12,13 +12,14 @@ struct catLiker {
     var likerName: String
     var likerLoc: String
     var likerRange: String
+    var likerImage: String
 }
 
 class LikeCollectionViewController: UICollectionViewController {
     @IBOutlet weak var likeCollectionView: UICollectionView!
     var items:[catLiker] = [
-    catLiker(likerName: "Hentai", likerLoc: "Jakarta", likerRange: "3 km"),
-    catLiker(likerName: "Bajing", likerLoc: "Atlantis", likerRange: "10 km")
+    catLiker(likerName: "Hentai", likerLoc: "Jakarta", likerRange: "3 km", likerImage: "2"),
+    catLiker(likerName: "Bajing", likerLoc: "Atlantis", likerRange: "10 km", likerImage: "1")
     ]
     
     
@@ -78,38 +79,8 @@ class LikeCollectionViewController: UICollectionViewController {
         cell.ownerName.text = items[indexPath.item].likerName
         cell.ownerLocation.text =  items[indexPath.item].likerLoc
         cell.ownerRange.text = items[indexPath.item].likerRange
+        cell.ownerPhoto.image = UIImage(named: items[indexPath.item].likerImage)
         return cell
     }
-
-    // MARK: UICollectionViewDelegate
-
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
-    
-    }
-    */
 
 }
