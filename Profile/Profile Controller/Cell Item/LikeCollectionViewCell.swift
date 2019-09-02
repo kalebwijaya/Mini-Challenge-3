@@ -19,7 +19,6 @@ class LikeCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var chatButton: UIButton!
     
     var usr_phone: Int?
-    var pic = #imageLiteral(resourceName: "image_3")
     
     @IBAction func pressChatButton(_ sender: Any) {
         usr_phone = 6287775771376
@@ -29,7 +28,6 @@ class LikeCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
 
         ownerPhoto.layer.cornerRadius=6
-        ownerPhoto.image = pic
     }
 
 }
