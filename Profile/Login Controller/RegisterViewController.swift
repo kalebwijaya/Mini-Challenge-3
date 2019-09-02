@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var checkBoxButton: UIButton!
     @IBOutlet weak var emailTF: UITextField!
@@ -20,9 +20,22 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupView()
+        delegateView()
         // Do any additional setup after loading the view.
     }
+    
+    private func delegateView() {
+        self.emailTF.delegate = self
+        self.passwordTF.delegate = self
+        self.passwordTF.delegate = self
+
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
     @IBAction func checkBoxTos(_ sender: UIButton) {
         if (sender.isSelected == true)
         {            sender.setImage(UIImage(named: "ic_checked"), for: UIControl.State.normal)
