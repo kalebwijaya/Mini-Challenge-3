@@ -36,7 +36,6 @@ class LikeButton: UIButton {
         isLiked = bool
         
         let image:UIImage = bool ? UIImage(named: "like")! : UIImage(named: "unlike")!
-        
         setBackgroundImage(image, for: .normal)
     }
 }

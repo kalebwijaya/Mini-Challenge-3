@@ -8,6 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		51D5C6A5231691B300695724 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5C6A4231691B300695724 /* LikeButton.swift */; };
+		EB2F2242231D66E4007626D0 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2F2241231D66E4007626D0 /* CloudKit.framework */; };
+		EB2F2246231D9E08007626D0 /* CKConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F2245231D9E08007626D0 /* CKConnection.swift */; };
+		EB2F2249231D9F5C007626D0 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F2248231D9F5C007626D0 /* Gender.swift */; };
+		EB2F224B231DA163007626D0 /* RecordTypeNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F224A231DA163007626D0 /* RecordTypeNames.swift */; };
+		EB2F224D231DA31D007626D0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F224C231DA31D007626D0 /* User.swift */; };
+		EB2F224F231DA7DC007626D0 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F224E231DA7DC007626D0 /* UserDefaultsKeys.swift */; };
+		EB2F2251231DB075007626D0 /* UserDataFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F2250231DB075007626D0 /* UserDataFields.swift */; };
+		EB2F2253231DB090007626D0 /* PetDataFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F2252231DB090007626D0 /* PetDataFields.swift */; };
+		EB508FE4231E4B93002EE9F9 /* ImageCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB508FE3231E4B93002EE9F9 /* ImageCat.swift */; };
 		EB76BD21231769F200B3F534 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76BD1D231769F200B3F534 /* RoundedView.swift */; };
 		EB76BD22231769F200B3F534 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76BD1E231769F200B3F534 /* RoundedButton.swift */; };
 		EB76BD23231769F200B3F534 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76BD1F231769F200B3F534 /* Extension.swift */; };
@@ -17,9 +26,8 @@
 		EB76BD2D23176DD600B3F534 /* CatEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76BD2C23176DD600B3F534 /* CatEditViewController.swift */; };
 		EB76BD2F23176DEF00B3F534 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76BD2E23176DEF00B3F534 /* LoginViewController.swift */; };
 		EB76BD3123176E0300B3F534 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76BD3023176E0300B3F534 /* RegisterViewController.swift */; };
-		EB76BD3323176F7600B3F534 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB76BD3223176F7600B3F534 /* Login.storyboard */; };
 		EB96F01D231CEBF700ED33BB /* AppDeletate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB96F01C231CEBF700ED33BB /* AppDeletate.swift */; };
-		EBE0462223193FF900657E6F /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE0462123193FF900657E6F /* OnBoarding.storyboard */; };
+		EBA9514E231E132800532E5E /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBA9514D231E132800532E5E /* Cat.swift */; };
 		EBE046252319404100657E6F /* onboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE046242319404100657E6F /* onboardingViewController.swift */; };
 		EBE046282319406000657E6F /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBE046262319405F00657E6F /* Slide.xib */; };
 		EBE046292319406000657E6F /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE046272319405F00657E6F /* Slide.swift */; };
@@ -46,6 +54,16 @@
 
 /* Begin PBXFileReference section */
 		51D5C6A4231691B300695724 /* LikeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
+		EB2F223F231D66E3007626D0 /* Profile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Profile.entitlements; sourceTree = "<group>"; };
+		EB2F2241231D66E4007626D0 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		EB2F2245231D9E08007626D0 /* CKConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CKConnection.swift; sourceTree = "<group>"; };
+		EB2F2248231D9F5C007626D0 /* Gender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		EB2F224A231DA163007626D0 /* RecordTypeNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordTypeNames.swift; sourceTree = "<group>"; };
+		EB2F224C231DA31D007626D0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EB2F224E231DA7DC007626D0 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		EB2F2250231DB075007626D0 /* UserDataFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataFields.swift; sourceTree = "<group>"; };
+		EB2F2252231DB090007626D0 /* PetDataFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDataFields.swift; sourceTree = "<group>"; };
+		EB508FE3231E4B93002EE9F9 /* ImageCat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCat.swift; sourceTree = "<group>"; };
 		EB76BD1D231769F200B3F534 /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		EB76BD1E231769F200B3F534 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		EB76BD1F231769F200B3F534 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
@@ -55,9 +73,8 @@
 		EB76BD2C23176DD600B3F534 /* CatEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatEditViewController.swift; sourceTree = "<group>"; };
 		EB76BD2E23176DEF00B3F534 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EB76BD3023176E0300B3F534 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
-		EB76BD3223176F7600B3F534 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		EB96F01C231CEBF700ED33BB /* AppDeletate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDeletate.swift; sourceTree = "<group>"; };
-		EBE0462123193FF900657E6F /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
+		EBA9514D231E132800532E5E /* Cat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
 		EBE046242319404100657E6F /* onboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = onboardingViewController.swift; sourceTree = "<group>"; };
 		EBE046262319405F00657E6F /* Slide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		EBE046272319405F00657E6F /* Slide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
@@ -89,12 +106,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB2F2242231D66E4007626D0 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB2F2240231D66E4007626D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB2F2241231D66E4007626D0 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EB2F2243231D9C31007626D0 /* CloudKit */ = {
+			isa = PBXGroup;
+			children = (
+				EB2F2245231D9E08007626D0 /* CKConnection.swift */,
+				EB2F224A231DA163007626D0 /* RecordTypeNames.swift */,
+				EB2F2250231DB075007626D0 /* UserDataFields.swift */,
+				EB2F2252231DB090007626D0 /* PetDataFields.swift */,
+			);
+			path = CloudKit;
+			sourceTree = "<group>";
+		};
+		EB2F2247231D9F30007626D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EB2F2248231D9F5C007626D0 /* Gender.swift */,
+				EB2F224C231DA31D007626D0 /* User.swift */,
+				EB2F224E231DA7DC007626D0 /* UserDefaultsKeys.swift */,
+				EBA9514D231E132800532E5E /* Cat.swift */,
+				EB508FE3231E4B93002EE9F9 /* ImageCat.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		EB76BD1B2317673300B3F534 /* Login Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +189,7 @@
 			children = (
 				F163A1E9230E74570093DD32 /* Profile */,
 				F163A1E8230E74570093DD32 /* Products */,
+				EB2F2240231D66E4007626D0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -154,15 +204,16 @@
 		F163A1E9230E74570093DD32 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				EB2F2243231D9C31007626D0 /* CloudKit */,
+				EB2F223F231D66E3007626D0 /* Profile.entitlements */,
 				EB96F01C231CEBF700ED33BB /* AppDeletate.swift */,
+				EB2F2247231D9F30007626D0 /* Model */,
 				EBE046232319403200657E6F /* OnBoarding */,
 				EB76BD2523176D6F00B3F534 /* Edit Cat */,
 				EB76BD1C231767B000B3F534 /* Helper */,
 				EB76BD1B2317673300B3F534 /* Login Controller */,
 				F163A1EE230E74570093DD32 /* Main.storyboard */,
 				F1A56C5823153F0D00C8F75F /* Profile.storyboard */,
-				EB76BD3223176F7600B3F534 /* Login.storyboard */,
-				EBE0462123193FF900657E6F /* OnBoarding.storyboard */,
 				F163A208230E91DC0093DD32 /* Profile Controller */,
 				F1A56C5C23153F5100C8F75F /* Match Controller */,
 				F163A1F1230E74580093DD32 /* Assets.xcassets */,
@@ -250,6 +301,14 @@
 				TargetAttributes = {
 					F163A1E6230E74570093DD32 = {
 						CreatedOnToolsVersion = 10.3;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -285,8 +344,6 @@
 				F163A1F2230E74580093DD32 /* Assets.xcassets in Resources */,
 				EB76BD2923176DC200B3F534 /* PhotoGalleryViewCell.xib in Resources */,
 				F163A1F0230E74570093DD32 /* Main.storyboard in Resources */,
-				EB76BD3323176F7600B3F534 /* Login.storyboard in Resources */,
-				EBE0462223193FF900657E6F /* OnBoarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,27 +354,36 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB2F2253231DB090007626D0 /* PetDataFields.swift in Sources */,
 				EB76BD23231769F200B3F534 /* Extension.swift in Sources */,
 				F1A56C6223153FB700C8F75F /* ChooseCatViewController.swift in Sources */,
 				F1A56C6623153FEF00C8F75F /* MatchCollectionViewCell.swift in Sources */,
 				F1A56C6123153FB700C8F75F /* ImageViewerViewController.swift in Sources */,
 				EB76BD2F23176DEF00B3F534 /* LoginViewController.swift in Sources */,
+				EB2F2251231DB075007626D0 /* UserDataFields.swift in Sources */,
 				F163A1ED230E74570093DD32 /* ViewController.swift in Sources */,
 				F1965242231A3011001C7CF0 /* LikeCollectionViewCell.swift in Sources */,
 				F184EC75231D046A008141C0 /* MapViewController.swift in Sources */,
+				EB2F2249231D9F5C007626D0 /* Gender.swift in Sources */,
 				EB76BD2D23176DD600B3F534 /* CatEditViewController.swift in Sources */,
 				F163A204230E80C40093DD32 /* ItemCollectionViewCell.swift in Sources */,
 				EB76BD24231769F200B3F534 /* GradientView.swift in Sources */,
+				EB2F224F231DA7DC007626D0 /* UserDefaultsKeys.swift in Sources */,
+				EB2F2246231D9E08007626D0 /* CKConnection.swift in Sources */,
 				EB76BD3123176E0300B3F534 /* RegisterViewController.swift in Sources */,
 				EB76BD21231769F200B3F534 /* RoundedView.swift in Sources */,
+				EB2F224B231DA163007626D0 /* RecordTypeNames.swift in Sources */,
+				EB508FE4231E4B93002EE9F9 /* ImageCat.swift in Sources */,
 				F1A56C6023153FB700C8F75F /* YourCatViewController.swift in Sources */,
 				EBE046292319406000657E6F /* Slide.swift in Sources */,
 				51D5C6A5231691B300695724 /* LikeButton.swift in Sources */,
 				F163A207230E81A40093DD32 /* OwnerCatDetailVC.swift in Sources */,
+				EB2F224D231DA31D007626D0 /* User.swift in Sources */,
 				EBE046252319404100657E6F /* onboardingViewController.swift in Sources */,
 				EB76BD22231769F200B3F534 /* RoundedButton.swift in Sources */,
 				EB96F01D231CEBF700ED33BB /* AppDeletate.swift in Sources */,
 				F1965245231A3545001C7CF0 /* LikeCollectionViewController.swift in Sources */,
+				EBA9514E231E132800532E5E /* Cat.swift in Sources */,
 				F16D02BC2317CBD200EE668A /* AddCatViewController.swift in Sources */,
 				EB76BD2B23176DC900B3F534 /* PhotoGalleryViewCell.swift in Sources */,
 				F163A201230E7FC30093DD32 /* EditProfileViewController.swift in Sources */,
@@ -474,6 +540,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Profile/Profile.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46X9JWL5UU;
 				INFOPLIST_FILE = Profile/Info.plist;
@@ -492,6 +559,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Profile/Profile.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46X9JWL5UU;
 				INFOPLIST_FILE = Profile/Info.plist;

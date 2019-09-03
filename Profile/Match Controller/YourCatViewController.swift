@@ -18,18 +18,20 @@ struct yourCat {
 
 class YourCatViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
-    
-    var items:[yourCat] = [
-        yourCat(imageName: "1", catRace: "Persian", catName: "Garou", catGender: "Gentlecat", age: "2 yr 3 mo"),
-        yourCat(imageName: "2",catRace: "Scottish",catName: "Nina", catGender: "Lady", age: "2 yr 11 mo"),
-        yourCat(imageName: "3",catRace: "Shorthair", catName: "Vinzz", catGender: "Gentlecat", age: "3 yr 1 mo"),
-        yourCat(imageName: "4",catRace: "Shorthair", catName: "Leya", catGender: "Lady", age: "3 yr 3 mo")]
-    
+    var items=[Cat]()
     var collectionViewFlowLayout : UICollectionViewFlowLayout!
     let cellIdentifier = "MatchCollectionViewCell"
     let imageViewSegueIdentifier = "chooseCat"
+    let buttonSegueIdentifier = "toAddCat"
     
     var cellHeight:CGFloat!
+
+//    var items:[Cat] = [
+//        Cat(imageName: "1", catRace: "Persian", catName: "Garou", catGender: "Gentlecat", age: "2 yr 3 mo", vaccines: ["A","B"]),
+//        Cat(imageName: "2",catRace: "Scottish",catName: "Nina", catGender: "Lady", age: "2 yr 11 mo", vaccines: ["A","B"]),
+//        Cat(imageName: "3",catRace: "Shorthair", catName: "Vinzz", catGender: "Gentlecat", age: "3 yr 1 mo", vaccines: ["A","B"]),
+//        Cat(imageName: "4",catRace: "Shorthair", catName: "Leya", catGender: "Lady", age: "3 yr 3 mo", vaccines: ["A","B"])]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,11 +77,33 @@ class YourCatViewController: UIViewController {
     }
     
     private func setupColletionView(){
+        
+        if (items.count == 0){
+            createAddCatButton()
+        }
         collectionView.delegate = self
         collectionView.dataSource = self
         
         let nib = UINib(nibName: "MatchCollectionViewCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: cellIdentifier)
+    }
+    
+    func createAddCatButton(){
+        let addButton = UIButton(frame: CGRect(x: (screenWidth/2)-75, y: screenHeight/2-75, width: 150, height: 150))
+        addButton.borderColor = #colorLiteral(red: 0.9383456111, green: 0.5349285603, blue: 0.4344137311, alpha: 1)
+        addButton.borderWidth = 6
+        addButton.layer.cornerRadius = addButton.bounds.size.width/2
+        addButton.setTitle("Add Cat", for: .normal)
+        addButton.setTitleColor(#colorLiteral(red: 0.9383456111, green: 0.5349285603, blue: 0.4344137311, alpha: 1), for: .normal)
+        addButton.addTarget(self, action: #selector(buttonAction), for: .touchUpInside)
+    
+        self.view.addSubview(addButton)
+    }
+    
+    @objc func buttonAction(sender: UIButton!) {
+        DispatchQueue.main.async {
+            self.performSegue(withIdentifier: self.buttonSegueIdentifier, sender: self)
+        }
     }
     
     private func setupCollectionViewItemSize(){
@@ -106,6 +130,9 @@ class YourCatViewController: UIViewController {
 
 extension YourCatViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        if (items.count == 0){
+            
+        }
         return items.count
     }
     
@@ -125,5 +152,6 @@ extension YourCatViewController: UICollectionViewDelegate, UICollectionViewDataS
         let item = items[indexPath.item]
         performSegue(withIdentifier: imageViewSegueIdentifier, sender: item)
     }
+    
 }
  

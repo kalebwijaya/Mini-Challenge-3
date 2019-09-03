@@ -6,20 +6,15 @@
 
 import UIKit
 
-struct ImageCat {
-    var imageName : String
-    var isSet : Bool
-}
-
 class CatEditViewController: UIViewController{
     @IBOutlet weak var photoGalleryCollectionView: UICollectionView!
     
     var items:[ImageCat] = [
-        ImageCat(imageName: "cat01", isSet: true),
-        ImageCat(imageName: "1", isSet: false),
-        ImageCat(imageName: "2", isSet: false),
-        ImageCat(imageName: "4", isSet: false),
-        ImageCat(imageName: "cat01", isSet: false),
+        ImageCat(imageName: "", isSet: false),
+        ImageCat(imageName: "", isSet: false),
+        ImageCat(imageName: "", isSet: false),
+        ImageCat(imageName: "", isSet: false),
+        ImageCat(imageName: "", isSet: false),
         ImageCat(imageName: "", isSet: false)]
     
     var collectionViewFlowLayout : UICollectionViewFlowLayout!
