@@ -55,4 +55,12 @@ class OwnerCatDetailVC: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "toEditCat"){
+            if let vc = segue.destination as? CatEditViewController {
+                vc.title = "Edit"
+            }
+        }
+    }
+    
 }

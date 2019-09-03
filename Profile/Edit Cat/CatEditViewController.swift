@@ -9,6 +9,8 @@ import UIKit
 class CatEditViewController: UIViewController{
     @IBOutlet weak var photoGalleryCollectionView: UICollectionView!
     
+    @IBOutlet weak var catName: UITextField!
+    
     var items:[ImageCat] = [
         ImageCat(imageName: "", isSet: false),
         ImageCat(imageName: "", isSet: false),

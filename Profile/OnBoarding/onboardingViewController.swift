@@ -44,6 +44,7 @@ class onboardingViewController: UIViewController, UIScrollViewDelegate, OnBoardi
         let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide1.backgroundView.image = UIImage(named: "bg01")
         slide1.imageView.image = UIImage(named: "image_1")
+        slide1.imageView.layer.cornerRadius = 15
         slide1.mainTitle.text = "Cating - Cat Mating Apps"
         slide1.descLabel.text = "Aplikasi akan membantu kamu mencarikan partner kawin buat kucing kamu"
         slide1.pushButton.isHidden = true
@@ -57,7 +58,7 @@ class onboardingViewController: UIViewController, UIScrollViewDelegate, OnBoardi
         
         let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide3.backgroundView.image = UIImage(named: "bg03")
-        slide3.imageView.image = UIImage(named: "onboarding03reverse")
+        slide3.imageView.image = UIImage(named: "onboarding03")
         slide3.mainTitle.text = "Find Their Match"
         slide3.descLabel.text = "Kamu dapat melihat profil kucing orang lain untuk memilih partner untuk kucing kamu"
         slide3.pushButton.isHidden = true
@@ -114,14 +115,14 @@ class onboardingViewController: UIViewController, UIScrollViewDelegate, OnBoardi
         
         if(percentOffset.x > 0 && percentOffset.x <= 0.25) {
             slides[0].imageView.transform = CGAffineTransform(scaleX: (0.25-percentOffset.x)/0.25, y: (0.25-percentOffset.x)/0.25)
-            slides[1].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/0.25, y: percentOffset.x/0.25)
+            slides[1].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/0.3, y: percentOffset.x/0.3)
             
         } else if(percentOffset.x > 0.25 && percentOffset.x <= 0.50) {
             slides[1].imageView.transform = CGAffineTransform(scaleX: (0.50-percentOffset.x)/0.25, y: (0.50-percentOffset.x)/0.25)
             slides[2].imageView.transform = CGAffineTransform(scaleX: percentOffset.x/0.50, y: percentOffset.x/0.50)
             
         } else if(percentOffset.x > 0.50 && percentOffset.x <= 0.75) {
-            slides[2].imageView.transform = CGAffineTransform(scaleX: (0.52-percentOffset.x)/0.25, y: (0.82-percentOffset.x)/0.25)
+            slides[2].imageView.transform = CGAffineTransform(scaleX: (0.9-percentOffset.x)/0.25, y: (1-percentOffset.x)/0.34)
             slides[3].imageView.transform = CGAffineTransform(scaleX: percentOffset.x, y: percentOffset.x)
             
         } else if(percentOffset.x > 0.75 && percentOffset.x <= 1) {
