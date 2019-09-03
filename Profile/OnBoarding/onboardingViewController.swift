@@ -42,7 +42,7 @@ class onboardingViewController: UIViewController, UIScrollViewDelegate, OnBoardi
     func createSlides() -> [Slide] {
         
         let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide1.backgroundView.image = UIImage(named: "bg01")
+        slide1.backgroundView.image = UIImage(named: "bg1")
         slide1.imageView.image = UIImage(named: "image_1")
         slide1.imageView.layer.cornerRadius = 15
         slide1.mainTitle.text = "Cating - Cat Mating Apps"
@@ -50,21 +50,21 @@ class onboardingViewController: UIViewController, UIScrollViewDelegate, OnBoardi
         slide1.pushButton.isHidden = true
         
         let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide2.backgroundView.image = UIImage(named: "bg02")
+        slide2.backgroundView.image = UIImage(named: "bg2")
         slide2.imageView.image = UIImage(named: "onboarding02")
         slide2.mainTitle.text = "Choose Your Cat"
         slide2.descLabel.text = "Masukan data kucing kamu kemudian pilih kucing yang ingin kamu carikan pasangan kawinya"
         slide2.pushButton.isHidden = true
         
         let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide3.backgroundView.image = UIImage(named: "bg03")
+        slide3.backgroundView.image = UIImage(named: "bg3")
         slide3.imageView.image = UIImage(named: "onboarding03")
         slide3.mainTitle.text = "Find Their Match"
         slide3.descLabel.text = "Kamu dapat melihat profil kucing orang lain untuk memilih partner untuk kucing kamu"
         slide3.pushButton.isHidden = true
         
         let slide4:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide4.backgroundView.image = UIImage(named: "bg04")
+        slide4.backgroundView.image = UIImage(named: "bg4")
         slide4.imageView.image = UIImage(named: "onboarding04")
         slide4.mainTitle.text = "Chat and Meet Up"
         slide4.descLabel.text = "Kamu tinggal 'Like' kucing orang lain dan tunggu pemilik kucing chat kamu!"
