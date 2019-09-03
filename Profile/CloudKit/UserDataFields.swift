@@ -15,6 +15,4 @@ struct UserDataFields {
     static let phoneNumber = "phoneNumber"
     static let photo = "photo"
     static let address = "address"
-
-
 }

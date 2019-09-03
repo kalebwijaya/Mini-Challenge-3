@@ -15,8 +15,9 @@
 		EB2F224D231DA31D007626D0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F224C231DA31D007626D0 /* User.swift */; };
 		EB2F224F231DA7DC007626D0 /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F224E231DA7DC007626D0 /* UserDefaultsKeys.swift */; };
 		EB2F2251231DB075007626D0 /* UserDataFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F2250231DB075007626D0 /* UserDataFields.swift */; };
-		EB2F2253231DB090007626D0 /* PetDataFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F2252231DB090007626D0 /* PetDataFields.swift */; };
+		EB2F2253231DB090007626D0 /* CatDataFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F2252231DB090007626D0 /* CatDataFields.swift */; };
 		EB508FE4231E4B93002EE9F9 /* ImageCat.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB508FE3231E4B93002EE9F9 /* ImageCat.swift */; };
+		EB508FE6231E53A3002EE9F9 /* UserNotificationField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB508FE5231E53A3002EE9F9 /* UserNotificationField.swift */; };
 		EB76BD21231769F200B3F534 /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76BD1D231769F200B3F534 /* RoundedView.swift */; };
 		EB76BD22231769F200B3F534 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76BD1E231769F200B3F534 /* RoundedButton.swift */; };
 		EB76BD23231769F200B3F534 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB76BD1F231769F200B3F534 /* Extension.swift */; };
@@ -62,8 +63,9 @@
 		EB2F224C231DA31D007626D0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EB2F224E231DA7DC007626D0 /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
 		EB2F2250231DB075007626D0 /* UserDataFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataFields.swift; sourceTree = "<group>"; };
-		EB2F2252231DB090007626D0 /* PetDataFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetDataFields.swift; sourceTree = "<group>"; };
+		EB2F2252231DB090007626D0 /* CatDataFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatDataFields.swift; sourceTree = "<group>"; };
 		EB508FE3231E4B93002EE9F9 /* ImageCat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCat.swift; sourceTree = "<group>"; };
+		EB508FE5231E53A3002EE9F9 /* UserNotificationField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotificationField.swift; sourceTree = "<group>"; };
 		EB76BD1D231769F200B3F534 /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
 		EB76BD1E231769F200B3F534 /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		EB76BD1F231769F200B3F534 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
@@ -127,7 +129,8 @@
 				EB2F2245231D9E08007626D0 /* CKConnection.swift */,
 				EB2F224A231DA163007626D0 /* RecordTypeNames.swift */,
 				EB2F2250231DB075007626D0 /* UserDataFields.swift */,
-				EB2F2252231DB090007626D0 /* PetDataFields.swift */,
+				EB2F2252231DB090007626D0 /* CatDataFields.swift */,
+				EB508FE5231E53A3002EE9F9 /* UserNotificationField.swift */,
 			);
 			path = CloudKit;
 			sourceTree = "<group>";
@@ -354,7 +357,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EB2F2253231DB090007626D0 /* PetDataFields.swift in Sources */,
+				EB508FE6231E53A3002EE9F9 /* UserNotificationField.swift in Sources */,
+				EB2F2253231DB090007626D0 /* CatDataFields.swift in Sources */,
 				EB76BD23231769F200B3F534 /* Extension.swift in Sources */,
 				F1A56C6223153FB700C8F75F /* ChooseCatViewController.swift in Sources */,
 				F1A56C6623153FEF00C8F75F /* MatchCollectionViewCell.swift in Sources */,

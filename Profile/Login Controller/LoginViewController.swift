@@ -17,7 +17,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     let buttonSegueIdentifier = "toProfil"
     let publicDB = CKConnection.publicCK
     var isNotRegistered = true
-    
     var users = [User]()
 
     override func viewDidLoad() {
@@ -115,7 +114,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             showAlert(title: "Alert", message: "Email Unregistered")
             
         } else {
-            
             for user in users{
                 if email == user.email! {
                     if password == user.password! {                            UserDefaults.standard.setLoggedIn(value: true)

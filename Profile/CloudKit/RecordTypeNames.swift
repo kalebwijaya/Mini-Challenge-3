@@ -10,9 +10,9 @@ import Foundation
 
 struct RecordTypeNames {
     static let USER = "UserData"
-    static let PET = "PetData"
+    static let CAT = "CatData"
     static let USER_NOTIFICATION = "UserNotification"
     static let USER_LIKES = "UserLikes"
-    static let PET_LIKED_BY =
-    "PetLikedBy"
+    static let CAT_LIKED_BY =
+    "CatLikedBy"
 }
