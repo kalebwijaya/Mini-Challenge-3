@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		512D751F231E6D3B000A8456 /* AddCat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 512D751D231E6D3B000A8456 /* AddCat.storyboard */; };
 		51D5C6A5231691B300695724 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5C6A4231691B300695724 /* LikeButton.swift */; };
 		EB2F2242231D66E4007626D0 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2F2241231D66E4007626D0 /* CloudKit.framework */; };
 		EB2F2246231D9E08007626D0 /* CKConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F2245231D9E08007626D0 /* CKConnection.swift */; };
@@ -40,7 +41,6 @@
 		F163A204230E80C40093DD32 /* ItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F163A202230E80C40093DD32 /* ItemCollectionViewCell.swift */; };
 		F163A205230E80C40093DD32 /* ItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F163A203230E80C40093DD32 /* ItemCollectionViewCell.xib */; };
 		F163A207230E81A40093DD32 /* OwnerCatDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F163A206230E81A40093DD32 /* OwnerCatDetailVC.swift */; };
-		F16D02BC2317CBD200EE668A /* AddCatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F16D02BB2317CBD200EE668A /* AddCatViewController.swift */; };
 		F184EC75231D046A008141C0 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F184EC74231D046A008141C0 /* MapViewController.swift */; };
 		F1965242231A3011001C7CF0 /* LikeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1965240231A3011001C7CF0 /* LikeCollectionViewCell.swift */; };
 		F1965243231A3011001C7CF0 /* LikeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F1965241231A3011001C7CF0 /* LikeCollectionViewCell.xib */; };
@@ -54,6 +54,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		512D751E231E6D3B000A8456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Profile/Base.lproj/AddCat.storyboard; sourceTree = "<group>"; };
 		51D5C6A4231691B300695724 /* LikeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
 		EB2F223F231D66E3007626D0 /* Profile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Profile.entitlements; sourceTree = "<group>"; };
 		EB2F2241231D66E4007626D0 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
@@ -90,7 +91,6 @@
 		F163A202230E80C40093DD32 /* ItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewCell.swift; sourceTree = "<group>"; };
 		F163A203230E80C40093DD32 /* ItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCollectionViewCell.xib; sourceTree = "<group>"; };
 		F163A206230E81A40093DD32 /* OwnerCatDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerCatDetailVC.swift; sourceTree = "<group>"; };
-		F16D02BB2317CBD200EE668A /* AddCatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCatViewController.swift; sourceTree = "<group>"; };
 		F184EC74231D046A008141C0 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F1965240231A3011001C7CF0 /* LikeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeCollectionViewCell.swift; sourceTree = "<group>"; };
 		F1965241231A3011001C7CF0 /* LikeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikeCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -190,6 +190,7 @@
 		F163A1DE230E74570093DD32 = {
 			isa = PBXGroup;
 			children = (
+				512D751D231E6D3B000A8456 /* AddCat.storyboard */,
 				F163A1E9230E74570093DD32 /* Profile */,
 				F163A1E8230E74570093DD32 /* Products */,
 				EB2F2240231D66E4007626D0 /* Frameworks */,
@@ -212,12 +213,12 @@
 				EB96F01C231CEBF700ED33BB /* AppDeletate.swift */,
 				EB2F2247231D9F30007626D0 /* Model */,
 				EBE046232319403200657E6F /* OnBoarding */,
-				EB76BD2523176D6F00B3F534 /* Edit Cat */,
 				EB76BD1C231767B000B3F534 /* Helper */,
 				EB76BD1B2317673300B3F534 /* Login Controller */,
-				F163A1EE230E74570093DD32 /* Main.storyboard */,
 				F1A56C5823153F0D00C8F75F /* Profile.storyboard */,
 				F163A208230E91DC0093DD32 /* Profile Controller */,
+				F163A1EE230E74570093DD32 /* Main.storyboard */,
+				EB76BD2523176D6F00B3F534 /* Edit Cat */,
 				F1A56C5C23153F5100C8F75F /* Match Controller */,
 				F163A1F1230E74580093DD32 /* Assets.xcassets */,
 				F163A1F3230E74580093DD32 /* LaunchScreen.storyboard */,
@@ -233,7 +234,6 @@
 				F163A200230E7FC30093DD32 /* EditProfileViewController.swift */,
 				F163A206230E81A40093DD32 /* OwnerCatDetailVC.swift */,
 				F1965244231A3545001C7CF0 /* LikeCollectionViewController.swift */,
-				F16D02BB2317CBD200EE668A /* AddCatViewController.swift */,
 				F184EC74231D046A008141C0 /* MapViewController.swift */,
 				F1A56C5B23153F3300C8F75F /* Cell Item */,
 			);
@@ -341,6 +341,7 @@
 				F1A56C5A23153F0D00C8F75F /* Profile.storyboard in Resources */,
 				F1965243231A3011001C7CF0 /* LikeCollectionViewCell.xib in Resources */,
 				F163A1F5230E74580093DD32 /* LaunchScreen.storyboard in Resources */,
+				512D751F231E6D3B000A8456 /* AddCat.storyboard in Resources */,
 				F1A56C6723153FEF00C8F75F /* MatchCollectionViewCell.xib in Resources */,
 				EBE046282319406000657E6F /* Slide.xib in Resources */,
 				F163A205230E80C40093DD32 /* ItemCollectionViewCell.xib in Resources */,
@@ -388,7 +389,6 @@
 				EB96F01D231CEBF700ED33BB /* AppDeletate.swift in Sources */,
 				F1965245231A3545001C7CF0 /* LikeCollectionViewController.swift in Sources */,
 				EBA9514E231E132800532E5E /* Cat.swift in Sources */,
-				F16D02BC2317CBD200EE668A /* AddCatViewController.swift in Sources */,
 				EB76BD2B23176DC900B3F534 /* PhotoGalleryViewCell.swift in Sources */,
 				F163A201230E7FC30093DD32 /* EditProfileViewController.swift in Sources */,
 			);
@@ -397,6 +397,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		512D751D231E6D3B000A8456 /* AddCat.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				512D751E231E6D3B000A8456 /* Base */,
+			);
+			name = AddCat.storyboard;
+			sourceTree = "<group>";
+		};
 		F163A1EE230E74570093DD32 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
