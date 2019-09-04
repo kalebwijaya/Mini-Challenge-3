@@ -18,7 +18,7 @@ struct catLiker {
 class LikeCollectionViewController: UICollectionViewController {
     @IBOutlet weak var likeCollectionView: UICollectionView!
     var items:[catLiker] = [
-    catLiker(likerName: "Kevin", likerLoc: "Tangerang", likerRange: "3 km", likerImage: "2"),
+    catLiker(likerName: "Kevin", likerLoc: "Tangerang", likerRange: "3 km", likerImage: "cat01"),
     catLiker(likerName: "Irfin", likerLoc: "Jakarta", likerRange: "10 km", likerImage: "1")
     ]
     

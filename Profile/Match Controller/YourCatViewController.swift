@@ -18,7 +18,8 @@ struct yourCat {
 
 class YourCatViewController: UIViewController {
     @IBOutlet weak var collectionView: UICollectionView!
-    var items=[Cat]()
+    var items:[Cat] = [
+        Cat(imageName: "cat01",catRace: "Persia", catName: "Garou", catGender: "Gentlecat", age: "2 yr 0 mo", vaccines: ["tricat","rabies"])]
     var collectionViewFlowLayout : UICollectionViewFlowLayout!
     let cellIdentifier = "MatchCollectionViewCell"
     let imageViewSegueIdentifier = "chooseCat"
@@ -47,7 +48,7 @@ class YourCatViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == imageViewSegueIdentifier {
-            let item = sender as! yourCat
+            let item = sender as! Cat
             if let vc = segue.destination as? ChooseCatViewController {
                 let navView = UIView()
                 

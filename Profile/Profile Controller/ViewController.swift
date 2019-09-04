@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     var items:[ownerCat] = [
         ownerCat(imageName: "1", catName: "Si Orenji", catRace: "Persian", catGender: "Lady", catAge: "2 yr 3 mo"),
         ownerCat(imageName: "2", catName: "Timmy", catRace: "Shorthair", catGender: "Gentlecat", catAge: "2 yr"),
-        ownerCat(imageName: "3", catName: "Bitsy", catRace: "Munchkin", catGender: "Lady", catAge: "3 yr 9 mo")]
+        ownerCat(imageName: "3", catName: "Lila", catRace: "Munchkin", catGender: "Lady", catAge: "2 yr 4 mo")]
     var data = ownerData(ownerName: "Kaleb", ownerLocation: "Tangerang", ownerVerification: "Verified Owner", ownerPic: "2")
     
     var collectionViewFlowLayout : UICollectionViewFlowLayout!

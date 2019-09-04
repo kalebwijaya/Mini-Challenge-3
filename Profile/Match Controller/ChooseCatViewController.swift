@@ -74,6 +74,8 @@ class ChooseCatViewController: UIViewController {
         
         let nib = UINib(nibName: "MatchCollectionViewCell", bundle: nil)
         collectionView.register(nib, forCellWithReuseIdentifier: cellIdentifier)
+        let nav = self.navigationController?.navigationBar
+        nav?.tintColor = #colorLiteral(red: 1, green: 0.2870690227, blue: 0.3279650807, alpha: 1)
     }
     
     private func setupCollectionViewItemSize(){

@@ -12,7 +12,7 @@ class CatEditViewController: UIViewController{
     @IBOutlet weak var catName: UITextField!
     
     var items:[ImageCat] = [
-        ImageCat(imageName: "", isSet: false),
+        ImageCat(imageName: "cat01", isSet: true),
         ImageCat(imageName: "", isSet: false),
         ImageCat(imageName: "", isSet: false),
         ImageCat(imageName: "", isSet: false),
@@ -27,9 +27,12 @@ class CatEditViewController: UIViewController{
         setupColletionView()
         
         let actionButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(editCat))
+        actionButton.tintColor = #colorLiteral(red: 1, green: 0.2870690227, blue: 0.3279650807, alpha: 1)
         self.navigationItem.rightBarButtonItem = actionButton
         
         let backButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(back))
+        backButton.tintColor = #colorLiteral(red: 1, green: 0.2870690227, blue: 0.3279650807, alpha: 1)
+
         self.navigationItem.leftBarButtonItem = backButton
         self.navigationItem.largeTitleDisplayMode = .never
     }
@@ -88,6 +91,11 @@ extension CatEditViewController: UICollectionViewDelegate, UICollectionViewDataS
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath ) as! PhotoGalleryViewCell
         
         cell.EditPhotoImageView.image = UIImage(named: items[indexPath.item].imageName)
+        if(items[indexPath.item].isSet){
+            cell.EditPhotoButton.backgroundColor = #colorLiteral(red: 1, green: 0, blue: 0.02367089503, alpha: 1)
+            cell.EditPhotoButton.setTitle("-", for: .normal)
+
+        }
         
         return cell
     }

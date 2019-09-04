@@ -38,7 +38,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let passTFLength = passwordTF.text!.count
         
         if (emailTF.text!.isEmpty ||  passwordTF.text!.isEmpty) {
-            showAlert(title: "Alert", message: "All text field must be filled")
+            showAlert(title: "Info", message: "You purposed to this cat, please wait for the owner response")
         } else if passTFLength < 4 {
             showAlert(title: "Alert", message: "at least 4 characters")
         } else {

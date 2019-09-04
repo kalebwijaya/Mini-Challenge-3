@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Your Cats-->
+        <!--Choose Your Cats-->
         <scene sceneID="xaR-pE-o6i">
             <objects>
                 <viewController id="7Ag-jS-ikN" customClass="YourCatViewController" customModule="Profile" customModuleProvider="target" sceneMemberID="viewController">
@@ -39,8 +39,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jf0-Tx-kxy"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Your Cats" id="aqQ-75-1xN">
+                    <navigationItem key="navigationItem" title="Choose Your Cats" id="aqQ-75-1xN">
                         <barButtonItem key="rightBarButtonItem" title="Profile" id="XF8-8O-AU1">
+                            <color key="tintColor" red="1" green="0.35686274509803922" blue="0.35812319149999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
                                 <segue destination="pRy-q0-cUw" kind="show" id="IKQ-T4-5YM"/>
                             </connections>
@@ -167,6 +168,7 @@
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="1" green="0.35686274509999999" blue="0.35812319149999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="F6d-fx-co2" firstAttribute="leading" secondItem="AUv-9W-XdT" secondAttribute="leading" id="Anj-iw-cdO"/>
                             <constraint firstItem="AUv-9W-XdT" firstAttribute="trailing" secondItem="F6d-fx-co2" secondAttribute="trailing" id="HXO-I8-Rva"/>
@@ -227,6 +229,7 @@
                             </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="1" green="0.35686274509999999" blue="0.35812319149999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="DwH-oc-WfH" secondAttribute="bottom" constant="20" id="Bus-J5-Imh"/>
                             <constraint firstItem="DwH-oc-WfH" firstAttribute="leading" secondItem="rRm-G7-2HU" secondAttribute="leading" constant="20" id="EEs-mS-qr3"/>
@@ -279,7 +282,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aji-Ip-4l7" customClass="RoundedView" customModule="Profile" customModuleProvider="target">
-                                <rect key="frame" x="38" y="233" width="338" height="516"/>
+                                <rect key="frame" x="38" y="190" width="338" height="516"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="klP-Ba-PIK">
                                         <rect key="frame" x="46" y="84" width="246" height="30"/>
@@ -373,6 +376,7 @@
                                     <constraint firstAttribute="trailing" secondItem="klP-Ba-PIK" secondAttribute="trailing" constant="46" id="MUQ-JF-nMR"/>
                                     <constraint firstAttribute="trailing" secondItem="zHE-mh-ZMt" secondAttribute="trailing" constant="46" id="Nwb-kb-j8n"/>
                                     <constraint firstItem="klP-Ba-PIK" firstAttribute="leading" secondItem="aji-Ip-4l7" secondAttribute="leading" constant="46" id="OVB-CQ-p1Z"/>
+                                    <constraint firstAttribute="height" constant="516" id="TSr-i7-Qen"/>
                                     <constraint firstItem="pWO-iS-k8F" firstAttribute="centerX" secondItem="aji-Ip-4l7" secondAttribute="centerX" id="WoC-fg-Nuj"/>
                                     <constraint firstItem="Urt-QU-cCL" firstAttribute="centerY" secondItem="qGd-gN-4Kr" secondAttribute="centerY" id="faU-mh-URQ"/>
                                     <constraint firstItem="klP-Ba-PIK" firstAttribute="top" secondItem="H0J-r2-ZFO" secondAttribute="bottom" constant="26" id="g8w-up-9Zp"/>
@@ -397,8 +401,7 @@
                         <constraints>
                             <constraint firstItem="aji-Ip-4l7" firstAttribute="leading" secondItem="FVo-yH-qFk" secondAttribute="leading" constant="38" id="AKT-TE-LsD"/>
                             <constraint firstItem="FVo-yH-qFk" firstAttribute="trailing" secondItem="aji-Ip-4l7" secondAttribute="trailing" constant="38" id="C5i-tx-T7f"/>
-                            <constraint firstItem="FVo-yH-qFk" firstAttribute="bottom" secondItem="aji-Ip-4l7" secondAttribute="bottom" constant="113" id="Emd-J8-d9D"/>
-                            <constraint firstItem="aji-Ip-4l7" firstAttribute="top" secondItem="FVo-yH-qFk" secondAttribute="top" constant="189" id="ViP-Tu-hl0"/>
+                            <constraint firstItem="aji-Ip-4l7" firstAttribute="centerY" secondItem="45T-Dp-m92" secondAttribute="centerY" id="Kov-X8-p6L"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="FVo-yH-qFk"/>
                         <userDefinedRuntimeAttributes>
@@ -747,7 +750,7 @@ If any provision (or part of a provision) of these App Terms is found by any cou
         <image name="unlike" width="41" height="38"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="IKX-87-UpN"/>
-        <segue reference="9HT-wr-RD4"/>
+        <segue reference="uGD-b5-trf"/>
+        <segue reference="zmX-FH-u0r"/>
     </inferredMetricsTieBreakers>
 </document>
