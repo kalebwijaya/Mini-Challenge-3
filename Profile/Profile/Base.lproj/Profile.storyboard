@@ -423,11 +423,22 @@ Velit scelerisque in dictum non consectetur. Ultrices vitae auctor eu augue ut. 
                     <navigationItem key="navigationItem" id="a8d-y2-OLM"/>
                     <connections>
                         <outlet property="likeCollectionView" destination="jgv-BL-jI1" id="IYy-WP-uig"/>
+                        <segue destination="LJC-fb-sLR" kind="push" identifier="detailAction" id="x0t-DV-HfI"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZfA-IR-pMA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1536" y="-275"/>
+        </scene>
+        <!--CatView-->
+        <scene sceneID="I9e-wj-lMm">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CatView" id="LJC-fb-sLR" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Okh-Ow-Oi8"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xjr-ps-3Uz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2301" y="-307"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="OZx-gW-W2Q">

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		512D751F231E6D3B000A8456 /* AddCat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 512D751D231E6D3B000A8456 /* AddCat.storyboard */; };
+		5197427A231FC6C5002FDAA5 /* CatView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51974279231FC6C5002FDAA5 /* CatView.storyboard */; };
 		51D5C6A5231691B300695724 /* LikeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D5C6A4231691B300695724 /* LikeButton.swift */; };
 		EB2F2242231D66E4007626D0 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB2F2241231D66E4007626D0 /* CloudKit.framework */; };
 		EB2F2246231D9E08007626D0 /* CKConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2F2245231D9E08007626D0 /* CKConnection.swift */; };
@@ -55,6 +56,7 @@
 
 /* Begin PBXFileReference section */
 		512D751E231E6D3B000A8456 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Profile/Base.lproj/AddCat.storyboard; sourceTree = "<group>"; };
+		51974279231FC6C5002FDAA5 /* CatView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CatView.storyboard; sourceTree = "<group>"; };
 		51D5C6A4231691B300695724 /* LikeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeButton.swift; sourceTree = "<group>"; };
 		EB2F223F231D66E3007626D0 /* Profile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Profile.entitlements; sourceTree = "<group>"; };
 		EB2F2241231D66E4007626D0 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
@@ -190,7 +192,6 @@
 		F163A1DE230E74570093DD32 = {
 			isa = PBXGroup;
 			children = (
-				512D751D231E6D3B000A8456 /* AddCat.storyboard */,
 				F163A1E9230E74570093DD32 /* Profile */,
 				F163A1E8230E74570093DD32 /* Products */,
 				EB2F2240231D66E4007626D0 /* Frameworks */,
@@ -215,9 +216,11 @@
 				EBE046232319403200657E6F /* OnBoarding */,
 				EB76BD1C231767B000B3F534 /* Helper */,
 				EB76BD1B2317673300B3F534 /* Login Controller */,
+				512D751D231E6D3B000A8456 /* AddCat.storyboard */,
+				51974279231FC6C5002FDAA5 /* CatView.storyboard */,
 				F1A56C5823153F0D00C8F75F /* Profile.storyboard */,
-				F163A208230E91DC0093DD32 /* Profile Controller */,
 				F163A1EE230E74570093DD32 /* Main.storyboard */,
+				F163A208230E91DC0093DD32 /* Profile Controller */,
 				EB76BD2523176D6F00B3F534 /* Edit Cat */,
 				F1A56C5C23153F5100C8F75F /* Match Controller */,
 				F163A1F1230E74580093DD32 /* Assets.xcassets */,
@@ -348,6 +351,7 @@
 				F163A1F2230E74580093DD32 /* Assets.xcassets in Resources */,
 				EB76BD2923176DC200B3F534 /* PhotoGalleryViewCell.xib in Resources */,
 				F163A1F0230E74570093DD32 /* Main.storyboard in Resources */,
+				5197427A231FC6C5002FDAA5 /* CatView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

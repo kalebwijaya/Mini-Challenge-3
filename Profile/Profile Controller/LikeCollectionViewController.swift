@@ -18,8 +18,8 @@ struct catLiker {
 class LikeCollectionViewController: UICollectionViewController {
     @IBOutlet weak var likeCollectionView: UICollectionView!
     var items:[catLiker] = [
-    catLiker(likerName: "Kevin", likerLoc: "Tangerang", likerRange: "3 km", likerImage: "cat01"),
-    catLiker(likerName: "Irfin", likerLoc: "Jakarta", likerRange: "10 km", likerImage: "1")
+    catLiker(likerName: "Lala", likerLoc: "Tangerang", likerRange: "3 km", likerImage: "2"),
+    catLiker(likerName: "Fluff", likerLoc: "Jakarta", likerRange: "10 km", likerImage: "4")
     ]
     
     
@@ -27,6 +27,7 @@ class LikeCollectionViewController: UICollectionViewController {
     let cellIdentifier = "LikeCell"
 
     var cellHeight: CGFloat!
+    var itemIndexPath = 0
 
     override func viewDidLoad() {
         
@@ -80,7 +81,29 @@ class LikeCollectionViewController: UICollectionViewController {
         cell.ownerLocation.text =  items[indexPath.item].likerLoc
         cell.ownerRange.text = items[indexPath.item].likerRange
         cell.ownerPhoto.image = UIImage(named: items[indexPath.item].likerImage)
+        cell.detailsButton.tag = indexPath.row
+        cell.detailsButton.addTarget(self, action: #selector(detailAction), for: .touchUpInside)
+        
         return cell
+    }
+
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let vc = segue.destination as? ImageViewerViewController {
+            let itemGet = sender as! catLiker
+            let item = otherCat(imageName: itemGet.likerImage, catRace: "Shorthair", catName: itemGet.likerName, catGender: "Lady", distance: "\(itemGet.likerRange) Away", age: "2 yr 2 mo")
+            vc.imageName = item.imageName
+            vc.genderName = item.catGender
+            vc.name = item.catName
+            vc.race = item.catRace
+            vc.distance = item.distance
+            vc.age = item.age
+        }
+    }
+    
+    @objc func detailAction(sender: UIButton!) {
+        performSegue(withIdentifier: "detailAction", sender: items[sender.tag])
     }
 
 }

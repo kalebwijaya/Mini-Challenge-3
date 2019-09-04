@@ -32,10 +32,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var verifImage: UIImageView!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    var items:[ownerCat] = [
-        ownerCat(imageName: "1", catName: "Si Orenji", catRace: "Persian", catGender: "Lady", catAge: "2 yr 3 mo"),
-        ownerCat(imageName: "2", catName: "Timmy", catRace: "Shorthair", catGender: "Gentlecat", catAge: "2 yr"),
-        ownerCat(imageName: "3", catName: "Lila", catRace: "Munchkin", catGender: "Lady", catAge: "2 yr 4 mo")]
+    var items:[Cat] = [
+        Cat(imageName: "cat01",catRace: "Persia", catName: "Garou", catGender: "Gentlecat", age: "2 yr 0 mo", vaccines: ["tricat","rabies"])]
     var data = ownerData(ownerName: "Kaleb", ownerLocation: "Tangerang", ownerVerification: "Verified Owner", ownerPic: "2")
     
     var collectionViewFlowLayout : UICollectionViewFlowLayout!
@@ -64,10 +62,10 @@ class ViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == imageViewSegueIdentifier {
-            let item = sender as! ownerCat
+            let item = sender as! Cat
             if let vc = segue.destination as? OwnerCatDetailVC {
                 vc.imageName = item.imageName
-                vc.age = item.catAge
+                vc.age = item.age
                 vc.name = item.catName
                 vc.race = item.catRace
                 vc.gender = item.catGender
@@ -130,7 +128,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource {
         cell.imageView.image = UIImage(named: items[indexPath.item].imageName)
         cell.catName.text = items[indexPath.item].catName
         cell.catGender.image = UIImage(named: items[indexPath.item].catGender)
-        cell.catAge.text = items[indexPath.item].catAge
+        cell.catAge.text = items[indexPath.item].age
         return cell
     }
     

@@ -57,6 +57,138 @@
             </objects>
             <point key="canvasLocation" x="-2874" y="305"/>
         </scene>
+        <!--Image Viewer View Controller-->
+        <scene sceneID="t0F-to-PKo">
+            <objects>
+                <viewController id="SzU-55-EeQ" customClass="ImageViewerViewController" customModule="Profile" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="frJ-Uq-MkQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F6d-fx-co2">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CTz-2B-Ojb">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOy-3g-2ZT">
+                                                <rect key="frame" x="54" y="361" width="30" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cat name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gf2-Xt-HmM">
+                                                <rect key="frame" x="58" y="283" width="111" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TLy-X3-gfv">
+                                                <rect key="frame" x="20" y="284" width="30" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vTB-kl-q29">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="267"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cat Race" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNc-M2-39b">
+                                                <rect key="frame" x="54" y="331" width="70" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Distance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s1N-Tq-PYT">
+                                                <rect key="frame" x="54" y="390" width="67" height="22"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vaccination Record" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mvp-UU-kG9">
+                                                <rect key="frame" x="20" y="450" width="394" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZsK-J9-JsE">
+                                                <rect key="frame" x="313" y="495" width="36" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vaksin A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yMv-sf-74S">
+                                                <rect key="frame" x="54" y="495" width="66" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="About Cat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NmH-IV-iog">
+                                                <rect key="frame" x="20" y="555" width="394" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" semanticContentAttribute="spatial" fixedFrame="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" canCancelContentTouches="NO" bouncesZoom="NO" editable="NO" textAlignment="justified" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b38-Wg-j4i">
+                                                <rect key="frame" x="53" y="595" width="309" height="175"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gwl-fK-ht3" customClass="LikeButton" customModule="Profile" customModuleProvider="target">
+                                                <rect key="frame" x="330" y="283" width="36" height="32"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <state key="normal" backgroundImage="unlike"/>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="CTz-2B-Ojb" firstAttribute="leading" secondItem="F6d-fx-co2" secondAttribute="leading" id="mvP-Yq-Sog"/>
+                                    <constraint firstAttribute="trailing" secondItem="CTz-2B-Ojb" secondAttribute="trailing" id="sc3-fK-PUT"/>
+                                    <constraint firstItem="CTz-2B-Ojb" firstAttribute="top" secondItem="F6d-fx-co2" secondAttribute="top" id="wJ8-te-ll5"/>
+                                    <constraint firstAttribute="bottom" secondItem="CTz-2B-Ojb" secondAttribute="bottom" id="wmg-Bh-97Q"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" red="1" green="0.35686274509999999" blue="0.35812319149999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="F6d-fx-co2" firstAttribute="leading" secondItem="AUv-9W-XdT" secondAttribute="leading" id="Anj-iw-cdO"/>
+                            <constraint firstItem="AUv-9W-XdT" firstAttribute="trailing" secondItem="F6d-fx-co2" secondAttribute="trailing" id="HXO-I8-Rva"/>
+                            <constraint firstItem="F6d-fx-co2" firstAttribute="top" secondItem="AUv-9W-XdT" secondAttribute="top" id="Ryr-gb-LZV"/>
+                            <constraint firstItem="CTz-2B-Ojb" firstAttribute="height" secondItem="frJ-Uq-MkQ" secondAttribute="height" priority="250" id="X9T-vA-h0h"/>
+                            <constraint firstItem="AUv-9W-XdT" firstAttribute="bottom" secondItem="F6d-fx-co2" secondAttribute="bottom" id="wwQ-0l-gye"/>
+                            <constraint firstItem="CTz-2B-Ojb" firstAttribute="width" secondItem="frJ-Uq-MkQ" secondAttribute="width" id="yVA-ot-NJW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="AUv-9W-XdT"/>
+                    </view>
+                    <connections>
+                        <outlet property="aboutCat" destination="b38-Wg-j4i" id="ONm-tO-QcI"/>
+                        <outlet property="catAge" destination="aOy-3g-2ZT" id="BSw-On-AYT"/>
+                        <outlet property="catDisctance" destination="s1N-Tq-PYT" id="Sxj-Hw-Q9w"/>
+                        <outlet property="catGender" destination="TLy-X3-gfv" id="1C7-4f-HPc"/>
+                        <outlet property="catName" destination="Gf2-Xt-HmM" id="DSF-sa-GEk"/>
+                        <outlet property="catRace" destination="XNc-M2-39b" id="BfO-Jb-16O"/>
+                        <outlet property="profileImage" destination="vTB-kl-q29" id="jct-Dm-8gC"/>
+                        <outlet property="scrollView" destination="CTz-2B-Ojb" id="5pA-En-Gje"/>
+                        <outlet property="vaksinDate" destination="ZsK-J9-JsE" id="gok-yb-kaZ"/>
+                        <outlet property="vaksinName" destination="yMv-sf-74S" id="Npq-6d-i6y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xr9-vP-2we" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1352.1739130434785" y="304.6875"/>
+        </scene>
         <!--Choose Cat View Controller-->
         <scene sceneID="ObF-Wi-Fmm">
             <objects>
@@ -101,7 +233,7 @@
                     </view>
                     <connections>
                         <outlet property="collectionView" destination="DwH-oc-WfH" id="E3r-fS-wlq"/>
-                        <segue destination="SEH-gJ-8KG" kind="show" identifier="viewImageSegue" id="Xg3-mo-S6v"/>
+                        <segue destination="SzU-55-EeQ" kind="show" identifier="viewImageSegue" id="Xg3-mo-S6v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ttx-Cy-dZm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -605,17 +737,10 @@ If any provision (or part of a provision) of these App Terms is found by any cou
             </objects>
             <point key="canvasLocation" x="-2822" y="918"/>
         </scene>
-        <!--CatView-->
-        <scene sceneID="fey-rg-hHX">
-            <objects>
-                <viewControllerPlaceholder storyboardName="CatView" id="SEH-gJ-8KG" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c4l-oi-Kv1" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1352.1739130434785" y="304.6875"/>
-        </scene>
     </scenes>
     <resources>
         <image name="ic_unchecked" width="50" height="50"/>
+        <image name="unlike" width="41" height="38"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="uGD-b5-trf"/>

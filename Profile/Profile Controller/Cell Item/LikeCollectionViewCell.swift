@@ -24,6 +24,7 @@ class LikeCollectionViewCell: UICollectionViewCell {
         usr_phone = 6287775771376
         UIApplication.shared.open(URL(string:"https://api.whatsapp.com/send?phone="+"\(String(describing: usr_phone))")!)
     }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
 
